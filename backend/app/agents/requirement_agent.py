@@ -142,7 +142,8 @@ Return ONLY valid JSON with this exact shape, no markdown fences, no extra text:
             resp_error = getattr(response, "error", None)
 
         if not resp_success:
-            raise RuntimeError(f"Requirement generation failed: {resp_error}")
+            logger.warning("LLM provider call failed: %s - falling back to deterministic expansion", resp_error)
+            resp_text = ""
 
         state["functional_requirements"], state["non_functional_requirements"] = self._parse_requirements(
             resp_text or ""
