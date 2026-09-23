@@ -225,54 +225,154 @@ Return ONLY valid JSON with this exact shape, no markdown fences, no extra text:
         )
 
     @staticmethod
+    def _infer_domain(project_description: str) -> str:
+        """Infer the most relevant domain from the project text."""
+        desc = (project_description or "").lower()
+
+        domain_rules = {
+            "attendance": [
+                "attendance", "student", "teacher", "classroom", "class",
+                "absent", "present", "roll call", "lecture", "semester",
+            ],
+            "food": [
+                "food", "meal", "nutrition", "calorie", "recipe", "diet",
+                "restaurant", "snack",
+            ],
+            "inventory": [
+                "inventory", "warehouse", "stock", "supplier", "product",
+                "sku", "purchase order", "restock",
+            ],
+            "project_management": [
+                "project", "task", "milestone", "issue", "sprint", "team",
+                "workflow", "bug", "roadmap",
+            ],
+        }
+
+        for domain, keywords in domain_rules.items():
+            if any(keyword in desc for keyword in keywords):
+                return domain
+        return "general"
+
+    @staticmethod
     def _expand_requirements(functional: List[str], non_functional: List[str], project_description: str) -> tuple:
         """
-        Expand sparse requirement lists with simple deterministic templates
-        to ensure downstream consumers always get a reasonably-sized set.
-        This is intentionally conservative and deterministic for testing.
+        Expand sparse requirement lists with domain-aware deterministic templates
+        so the fallback remains accurate for non-food projects such as student
+        attendance systems.
         """
-        # Find a domain keyword from the project description
-        desc = (project_description or "").lower()
-        domain_candidates = ["food", "meal", "nutrition", "calorie", "recipe"]
-        domain = next((d for d in domain_candidates if d in desc), "food")
+        domain = RequirementAgent._infer_domain(project_description)
 
-        # Templates for functional requirements
-        func_templates = [
-            "Users can log {domain} entries",
-            "Users can view their {domain} history",
-            "Users can edit previously logged {domain} entries",
-            "Users can delete {domain} entries they created",
-            "Users can search {domain} entries by tag or date",
-            "Users can export their {domain} data as CSV",
-            "Users can share {domain} entries with a caregiver",
-            "The system can aggregate {domain} statistics per week",
-            "Users can set reminders to log {domain}",
-        ]
+        domain_templates = {
+            "attendance": {
+                "functional": [
+                    "Teachers can mark student attendance for each class session",
+                    "Students can view their attendance records and percentage for each course",
+                    "Parents can receive alerts when a student is marked absent or late",
+                    "Admins can generate daily and monthly attendance summaries by class",
+                    "Teachers can search attendance by student, date, or subject",
+                    "The system can flag students who fall below the attendance threshold",
+                    "Managers can export class attendance reports as CSV or PDF",
+                    "Teachers can edit or correct attendance entries after a class period",
+                ],
+                "non_functional": [
+                    "Attendance data must sync in real time across teacher and admin dashboards",
+                    "The attendance workflow must remain available during class hours with minimal downtime",
+                    "Student and attendance records must be protected with access controls for staff roles",
+                    "The system must retain attendance history for the academic term and audit review",
+                    "Attendance dashboards must remain readable on classroom tablets and laptops",
+                ],
+            },
+            "food": {
+                "functional": [
+                    "Users can log food entries",
+                    "Users can view their food history",
+                    "Users can edit previously logged food entries",
+                    "Users can delete food entries they created",
+                    "Users can search food entries by tag or date",
+                    "Users can export their food data as CSV",
+                    "Users can share food entries with a caregiver",
+                    "The system can aggregate food statistics per week",
+                ],
+                "non_functional": [
+                    "All food data must be encrypted at rest",
+                    "Food logging must be available offline and sync when online",
+                    "Food data should be exportable within 5 seconds",
+                    "The UI for food pages must be accessible (WCAG AA)",
+                    "The system must retain food history for 2 years",
+                ],
+            },
+            "inventory": {
+                "functional": [
+                    "Managers can log stock items and current inventory levels",
+                    "Staff can update inventory after sales, returns, or restocks",
+                    "Users can search products by name, category, or SKU",
+                    "The system can notify managers when inventory falls below threshold",
+                    "Admins can review purchase history and supplier performance",
+                    "Teams can export inventory summaries for analysis",
+                    "Users can track stock movements across warehouses",
+                    "Managers can generate reorder recommendations based on demand trends",
+                ],
+                "non_functional": [
+                    "Inventory data must be consistent across all warehouse locations",
+                    "Stock lookups must respond quickly during peak retail periods",
+                    "The system must restrict inventory edits to authorized staff",
+                    "Inventory records must be retained according to audit requirements",
+                    "The dashboard must remain usable on desktop and tablet devices",
+                ],
+            },
+            "project_management": {
+                "functional": [
+                    "Teams can create project tasks with priority and owner assignments",
+                    "Managers can track work by milestone and sprint timeline",
+                    "Users can review issue status, blockers, and dependencies",
+                    "Project leads can view workload across the team",
+                    "Teams can export project status reports for stakeholders",
+                    "Users can update tasks as work progresses",
+                    "Admins can assign roles and permissions by project",
+                    "The system can summarize overdue work and risk items",
+                ],
+                "non_functional": [
+                    "Project data must be visible to authorized members in real time",
+                    "Task APIs must remain responsive during concurrent updates",
+                    "The system must enforce access control for project records",
+                    "Audit logs must retain task changes for compliance review",
+                    "The UI must work well on desktop and mobile project dashboards",
+                ],
+            },
+            "general": {
+                "functional": [
+                    "Users can create and manage core project records",
+                    "Users can view the current status of important entities",
+                    "Admins can update records and review activity history",
+                    "The system can search records by key fields and filters",
+                    "Users can export operational data for reporting",
+                    "Teams can monitor trends across the workflow",
+                    "The platform supports role-based access to sensitive actions",
+                    "Users can review summaries and activity logs for operational insight",
+                ],
+                "non_functional": [
+                    "Core system data must remain secure and access-controlled",
+                    "The application must be reliable during daily operating hours",
+                    "The platform must scale to support concurrent users without data loss",
+                    "The interface must be easy to use for the target role users",
+                    "Audit and retention requirements must be enforced for important records",
+                ],
+            },
+        }
 
-        nonfunc_templates = [
-            "All {domain} data must be encrypted at rest",
-            "{domain} logging must be available offline and sync when online",
-            "{domain} data should be exportable within 5 seconds",
-            "The UI for {domain} pages must be accessible (WCAG AA)",
-            "The system must retain {domain} history for 2 years",
-            "API responses for {domain} requests must be paginated",
-        ]
+        templates = domain_templates.get(domain, domain_templates["general"])
 
-        # Fill functional requirements
         augmented_func = list(functional)
-        i = 0
-        while len(augmented_func) < 8 and i < len(func_templates):
-            candidate = func_templates[i].format(domain=domain)
+        for candidate in templates["functional"]:
+            if len(augmented_func) >= 8:
+                break
             augmented_func.append(candidate)
-            i += 1
 
-        # Fill non-functional requirements
         augmented_nonfunc = list(non_functional)
-        j = 0
-        while len(augmented_nonfunc) < 5 and j < len(nonfunc_templates):
-            candidate = nonfunc_templates[j].format(domain=domain)
+        for candidate in templates["non_functional"]:
+            if len(augmented_nonfunc) >= 5:
+                break
             augmented_nonfunc.append(candidate)
-            j += 1
 
         return (
             RequirementAgent._dedupe_preserve_order(augmented_func),

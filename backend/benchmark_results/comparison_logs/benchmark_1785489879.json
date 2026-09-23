@@ -1,0 +1,234 @@
+{
+  "timestamp": 1785489879,
+  "project_description": "food delivery system\n",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.756
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.795
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.656
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.82
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 32.342
+    }
+  },
+  "scores": {
+    "gemini": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.66248222126028,
+      "overall_score": 41.52
+    },
+    "deepseek": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.54189598664276,
+      "overall_score": 41.5
+    },
+    "llama": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.97167769463854,
+      "overall_score": 41.55
+    },
+    "qwen": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.46459711829819,
+      "overall_score": 41.5
+    },
+    "mistral": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 0.0,
+      "overall_score": 31.75
+    }
+  },
+  "best_model": "llama"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+backend/.venv/
+build/
+dist/
+*.index
+data/embeddings/*.npy
+backend/data/raw/*
+!backend/data/raw/**/.gitkeep
+outputs/architecture_diagrams/*.png
+benchmark_results/comparison_logs/*.json

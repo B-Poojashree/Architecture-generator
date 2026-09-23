@@ -1,0 +1,751 @@
+{
+  "timestamp": 1784622155,
+  "project_description": "e commerce website for cosmetics",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 6.808
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 20.495
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [
+        "The website should allow users to browse and search for cosmetic products by category, brand, and price.",
+        "Users should be able to create and manage their accounts, including order history and saved payment methods.",
+        "The website should facilitate secure payment processing for online transactions.",
+        "The system should enable administrators to manage product inventory, pricing, and descriptions.",
+        "Users should be able to leave reviews and ratings for products they have purchased.",
+        "The website should provide a shopping cart and checkout functionality.",
+        "The system should support discounts, promotions, and loyalty programs.",
+        "Administrators should be able to generate reports on sales, customer behavior, and product performance.",
+        "The website should be optimized for mobile devices and responsive across different screen sizes.",
+        "The system should ensure data encryption and compliance with relevant security standards.",
+        "The website should be able to handle a minimum of 1000 concurrent users without significant performance degradation.",
+        "The system should provide an average page load time of less than 3 seconds.",
+        "The website should be accessible and follow Web Content Accessibility Guidelines (WCAG 2.1).",
+        "The system should be scalable to accommodate increased traffic and sales during peak periods.",
+        "The website should integrate with social media platforms for sharing and authentication.",
+        "The system should provide real-time updates and notifications for order status, shipping, and promotions."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Requirements Analysis"
+          },
+          {
+            "id": "T2",
+            "name": "System Design"
+          },
+          {
+            "id": "T3",
+            "name": "Database Design"
+          },
+          {
+            "id": "T4",
+            "name": "User Interface Design"
+          },
+          {
+            "id": "T5",
+            "name": "Implementation Planning"
+          },
+          {
+            "id": "T6",
+            "name": "Frontend Development"
+          },
+          {
+            "id": "T7",
+            "name": "Backend Development"
+          },
+          {
+            "id": "T8",
+            "name": "Database Implementation"
+          },
+          {
+            "id": "T9",
+            "name": "Security Implementation"
+          },
+          {
+            "id": "T10",
+            "name": "Unit Testing"
+          },
+          {
+            "id": "T11",
+            "name": "Integration Testing"
+          },
+          {
+            "id": "T12",
+            "name": "System Testing"
+          },
+          {
+            "id": "T13",
+            "name": "Performance Testing"
+          },
+          {
+            "id": "T14",
+            "name": "Accessibility Testing"
+          },
+          {
+            "id": "T15",
+            "name": "Deployment Planning"
+          },
+          {
+            "id": "T16",
+            "name": "Staging Deployment"
+          },
+          {
+            "id": "T17",
+            "name": "Production Deployment"
+          },
+          {
+            "id": "T18",
+            "name": "Monitoring and Maintenance"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T3",
+            "to": "T5"
+          },
+          {
+            "from": "T4",
+            "to": "T5"
+          },
+          {
+            "from": "T5",
+            "to": "T6"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T8"
+          },
+          {
+            "from": "T6",
+            "to": "T10"
+          },
+          {
+            "from": "T7",
+            "to": "T9"
+          },
+          {
+            "from": "T7",
+            "to": "T10"
+          },
+          {
+            "from": "T8",
+            "to": "T9"
+          },
+          {
+            "from": "T8",
+            "to": "T10"
+          },
+          {
+            "from": "T10",
+            "to": "T11"
+          },
+          {
+            "from": "T11",
+            "to": "T12"
+          },
+          {
+            "from": "T12",
+            "to": "T13"
+          },
+          {
+            "from": "T12",
+            "to": "T14"
+          },
+          {
+            "from": "T13",
+            "to": "T15"
+          },
+          {
+            "from": "T14",
+            "to": "T15"
+          },
+          {
+            "from": "T15",
+            "to": "T16"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          },
+          {
+            "from": "T17",
+            "to": "T18"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Requirements Analysis",
+          "risk": "Inadequate requirements gathering may lead to misunderstandings of project scope and objectives.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder interviews and workshops to ensure accurate requirements collection."
+        },
+        {
+          "stage": "System Design",
+          "risk": "Inconsistent or incomplete system architecture may cause integration issues and scalability problems.",
+          "severity": "Medium",
+          "mitigation": "Develop a comprehensive system design document and review it with the development team."
+        },
+        {
+          "stage": "Database Design",
+          "risk": "Poor database schema design may result in data inconsistencies and performance issues.",
+          "severity": "Medium",
+          "mitigation": "Use established database design principles and involve experienced database administrators in the design process."
+        },
+        {
+          "stage": "User Interface Design",
+          "risk": "Inadequate user experience design may lead to low user adoption and satisfaction.",
+          "severity": "Medium",
+          "mitigation": "Conduct user research and usability testing to inform the design of intuitive and user-friendly interfaces."
+        },
+        {
+          "stage": "Implementation Planning",
+          "risk": "Inaccurate project timelines and resource allocation may cause delays and cost overruns.",
+          "severity": "High",
+          "mitigation": "Create a detailed project schedule and resource plan, and regularly review and update it."
+        },
+        {
+          "stage": "Frontend Development",
+          "risk": "Incompatible or outdated frontend technologies may cause cross-browser and device compatibility issues.",
+          "severity": "Medium",
+          "mitigation": "Use established frontend frameworks and libraries, and test thoroughly on different browsers and devices."
+        },
+        {
+          "stage": "Backend Development",
+          "risk": "Insecure or inefficient backend code may lead to security vulnerabilities and performance issues.",
+          "severity": "High",
+          "mitigation": "Follow secure coding practices, use established frameworks and libraries, and conduct regular code reviews."
+        },
+        {
+          "stage": "Database Implementation",
+          "risk": "Data migration and integration issues may cause data loss or corruption.",
+          "severity": "High",
+          "mitigation": "Develop a comprehensive data migration plan, and test it thoroughly before executing it."
+        },
+        {
+          "stage": "Security Implementation",
+          "risk": "Inadequate security measures may lead to unauthorized access and data breaches.",
+          "severity": "High",
+          "mitigation": "Implement established security protocols and conduct regular security audits and penetration testing."
+        },
+        {
+          "stage": "Unit Testing",
+          "risk": "Inadequate unit testing may lead to undetected bugs and defects in the code.",
+          "severity": "Medium",
+          "mitigation": "Write comprehensive unit tests for all code components, and use automated testing tools."
+        },
+        {
+          "stage": "Integration Testing",
+          "risk": "Inadequate integration testing may lead to issues with component interactions and system integration.",
+          "severity": "Medium",
+          "mitigation": "Develop a thorough integration testing plan, and test all system components and interfaces."
+        },
+        {
+          "stage": "System Testing",
+          "risk": "Inadequate system testing may lead to undetected system-level issues and defects.",
+          "severity": "High",
+          "mitigation": "Develop a comprehensive system testing plan, and test the entire system under various scenarios and conditions."
+        },
+        {
+          "stage": "Performance Testing",
+          "risk": "Inadequate performance testing may lead to system performance issues and scalability problems.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough performance testing under various loads and scenarios, and optimize system performance accordingly."
+        },
+        {
+          "stage": "Accessibility Testing",
+          "risk": "Inadequate accessibility testing may lead to non-compliance with accessibility standards and regulations.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough accessibility testing using established tools and guidelines, and address any identified issues."
+        },
+        {
+          "stage": "Deployment Planning",
+          "risk": "Inadequate deployment planning may lead to deployment delays and issues.",
+          "severity": "Medium",
+          "mitigation": "Develop a comprehensive deployment plan, and test it thoroughly before executing it."
+        },
+        {
+          "stage": "Staging Deployment",
+          "risk": "Inadequate staging deployment may lead to issues with deployment to production.",
+          "severity": "Medium",
+          "mitigation": "Use a staging environment that mirrors production, and test the deployment process thoroughly."
+        },
+        {
+          "stage": "Production Deployment",
+          "risk": "Inadequate production deployment may lead to system downtime and data loss.",
+          "severity": "High",
+          "mitigation": "Develop a comprehensive production deployment plan, and execute it during a scheduled maintenance window."
+        },
+        {
+          "stage": "Monitoring and Maintenance",
+          "risk": "Inadequate monitoring and maintenance may lead to system performance issues and security vulnerabilities.",
+          "severity": "Medium",
+          "mitigation": "Establish a comprehensive monitoring and maintenance plan, and regularly review and update it."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.857,
+        "risk_coverage": 1.0,
+        "validation_score": 97.14
+      },
+      "response_time_seconds": 14.824
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.619
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather detailed requirements"
+          },
+          {
+            "id": "T2",
+            "name": "Create system architecture design"
+          },
+          {
+            "id": "T3",
+            "name": "Design database schema"
+          },
+          {
+            "id": "T4",
+            "name": "Design API endpoints"
+          },
+          {
+            "id": "T5",
+            "name": "Set up development environment"
+          },
+          {
+            "id": "T6",
+            "name": "Implement core backend services"
+          },
+          {
+            "id": "T7",
+            "name": "Implement frontend components"
+          },
+          {
+            "id": "T8",
+            "name": "Implement database integration layer"
+          },
+          {
+            "id": "T9",
+            "name": "Unit testing for backend services"
+          },
+          {
+            "id": "T10",
+            "name": "Unit testing for frontend components"
+          },
+          {
+            "id": "T11",
+            "name": "Integration testing"
+          },
+          {
+            "id": "T12",
+            "name": "System testing"
+          },
+          {
+            "id": "T13",
+            "name": "User acceptance testing"
+          },
+          {
+            "id": "T14",
+            "name": "Prepare production environment"
+          },
+          {
+            "id": "T15",
+            "name": "Deploy to staging environment"
+          },
+          {
+            "id": "T16",
+            "name": "Final deployment to production"
+          },
+          {
+            "id": "T17",
+            "name": "Post-deployment monitoring and bug fixes"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T3",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T4",
+            "to": "T6"
+          },
+          {
+            "from": "T4",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T6"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T6",
+            "to": "T8"
+          },
+          {
+            "from": "T6",
+            "to": "T9"
+          },
+          {
+            "from": "T7",
+            "to": "T10"
+          },
+          {
+            "from": "T8",
+            "to": "T11"
+          },
+          {
+            "from": "T9",
+            "to": "T11"
+          },
+          {
+            "from": "T10",
+            "to": "T11"
+          },
+          {
+            "from": "T11",
+            "to": "T12"
+          },
+          {
+            "from": "T12",
+            "to": "T13"
+          },
+          {
+            "from": "T13",
+            "to": "T15"
+          },
+          {
+            "from": "T14",
+            "to": "T15"
+          },
+          {
+            "from": "T15",
+            "to": "T16"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Gather detailed requirements",
+          "risk": "Requirements are incomplete or ambiguous, leading to scope creep or rework.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder interviews and document requirements with clear acceptance criteria."
+        },
+        {
+          "stage": "Create system architecture design",
+          "risk": "Architecture decisions may not scale or align with future needs, causing technical debt.",
+          "severity": "High",
+          "mitigation": "Evaluate trade-offs with stakeholders and validate architecture through prototyping or reviews."
+        },
+        {
+          "stage": "Design database schema",
+          "risk": "Poor schema design leads to performance bottlenecks or data integrity issues.",
+          "severity": "High",
+          "mitigation": "Normalize schema appropriately and conduct peer reviews for scalability and efficiency."
+        },
+        {
+          "stage": "Design API endpoints",
+          "risk": "API contracts may not meet client needs or lack versioning, causing breaking changes.",
+          "severity": "Medium",
+          "mitigation": "Follow RESTful principles and version endpoints early to ensure backward compatibility."
+        },
+        {
+          "stage": "Set up development environment",
+          "risk": "Environment inconsistencies cause deployment failures or debugging difficulties.",
+          "severity": "Medium",
+          "mitigation": "Use containerization (e.g., Docker) and infrastructure-as-code (e.g., Terraform) for reproducibility."
+        },
+        {
+          "stage": "Implement core backend services",
+          "risk": "Business logic errors or security vulnerabilities are introduced during implementation.",
+          "severity": "High",
+          "mitigation": "Enforce code reviews, static analysis, and adherence to secure coding practices."
+        },
+        {
+          "stage": "Implement frontend components",
+          "risk": "UI/UX inconsistencies or accessibility issues arise due to lack of design system adherence.",
+          "severity": "Medium",
+          "mitigation": "Use a shared component library and conduct usability testing early."
+        },
+        {
+          "stage": "Implement database integration layer",
+          "risk": "Data corruption or race conditions occur due to improper transaction handling.",
+          "severity": "High",
+          "mitigation": "Implement connection pooling, transactions, and thorough testing for concurrency scenarios."
+        },
+        {
+          "stage": "Unit testing for backend services",
+          "risk": "Insufficient test coverage misses critical edge cases or regression bugs.",
+          "severity": "Medium",
+          "mitigation": "Enforce minimum test coverage thresholds and use mutation testing to validate test quality."
+        },
+        {
+          "stage": "Unit testing for frontend components",
+          "risk": "Mocking dependencies incorrectly leads to false confidence in component behavior.",
+          "severity": "Medium",
+          "mitigation": "Use integration tests for component interactions and avoid over-mocking."
+        },
+        {
+          "stage": "Integration testing",
+          "risk": "Third-party service failures or API mismatches are not detected until production.",
+          "severity": "High",
+          "mitigation": "Mock external dependencies in staging and validate contract tests for APIs."
+        },
+        {
+          "stage": "System testing",
+          "risk": "End-to-end workflows fail due to overlooked edge cases or environment-specific issues.",
+          "severity": "High",
+          "mitigation": "Automate system tests and include chaos engineering to test resilience."
+        },
+        {
+          "stage": "User acceptance testing",
+          "risk": "Stakeholders reject features due to misaligned expectations or usability issues.",
+          "severity": "Medium",
+          "mitigation": "Involve end-users early in the design phase and iterate based on feedback."
+        },
+        {
+          "stage": "Prepare production environment",
+          "risk": "Misconfigured infrastructure causes downtime or security breaches.",
+          "severity": "High",
+          "mitigation": "Use automated configuration management and conduct pre-deployment security audits."
+        },
+        {
+          "stage": "Deploy to staging environment",
+          "risk": "Staging environment differs from production, leading to undetected issues.",
+          "severity": "High",
+          "mitigation": "Keep staging environment as close to production as possible and validate data consistency."
+        },
+        {
+          "stage": "Final deployment to production",
+          "risk": "Deployment errors cause service outages or data loss.",
+          "severity": "High",
+          "mitigation": "Use blue-green deployments or canary releases with rollback plans."
+        },
+        {
+          "stage": "Post-deployment monitoring and bug fixes",
+          "risk": "Undetected production issues escalate due to lack of observability or slow response times.",
+          "severity": "High",
+          "mitigation": "Implement comprehensive logging, metrics, and alerting with a dedicated on-call rotation."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.714,
+        "risk_coverage": 1.0,
+        "validation_score": 94.29
+      },
+      "response_time_seconds": 35.807
+    }
+  },
+  "scores": {
+    "gemini": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 80.98695785740219,
+      "overall_score": 39.85
+    },
+    "deepseek": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 42.76258832071941,
+      "overall_score": 36.03
+    },
+    "llama": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 85.7,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 58.60027368950206,
+      "overall_score": 93.0
+    },
+    "qwen": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 98.27128773703467,
+      "overall_score": 41.58
+    },
+    "mistral": {
+      "requirement_coverage": 0,
+      "workflow_completeness": 71.39999999999999,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 59.28
+    }
+  },
+  "best_model": "llama"
+}

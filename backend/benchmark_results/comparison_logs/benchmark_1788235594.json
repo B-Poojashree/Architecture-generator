@@ -1,0 +1,654 @@
+{
+  "timestamp": 1788235594,
+  "project_description": "student attendance management system\n",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": false,
+      "error": "[Errno 13] Permission denied: 'outputs\\\\architecture_diagrams\\\\workflow_architecture'",
+      "response_time_seconds": 0.57
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance for each class session",
+        "Students can view their attendance records and percentage for each course",
+        "Parents can receive alerts when a student is marked absent or late",
+        "Admins can generate daily and monthly attendance summaries by class",
+        "Teachers can search attendance by student, date, or subject",
+        "The system can flag students who fall below the attendance threshold",
+        "Managers can export class attendance reports as CSV or PDF",
+        "Teachers can edit or correct attendance entries after a class period",
+        "Attendance data must sync in real time across teacher and admin dashboards",
+        "The attendance workflow must remain available during class hours with minimal downtime",
+        "Student and attendance records must be protected with access controls for staff roles",
+        "The system must retain attendance history for the academic term and audit review",
+        "Attendance dashboards must remain readable on classroom tablets and laptops"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.729
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance for each class session",
+        "Students can view their attendance records and percentage for each course",
+        "Parents can receive alerts when a student is marked absent or late",
+        "Admins can generate daily and monthly attendance summaries by class",
+        "Teachers can search attendance by student, date, or subject",
+        "The system can flag students who fall below the attendance threshold",
+        "Managers can export class attendance reports as CSV or PDF",
+        "Teachers can edit or correct attendance entries after a class period",
+        "Attendance data must sync in real time across teacher and admin dashboards",
+        "The attendance workflow must remain available during class hours with minimal downtime",
+        "Student and attendance records must be protected with access controls for staff roles",
+        "The system must retain attendance history for the academic term and audit review",
+        "Attendance dashboards must remain readable on classroom tablets and laptops"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 1.986
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance for each class session",
+        "Students can view their attendance records and percentage for each course",
+        "Parents can receive alerts when a student is marked absent or late",
+        "Admins can generate daily and monthly attendance summaries by class",
+        "Teachers can search attendance by student, date, or subject",
+        "The system can flag students who fall below the attendance threshold",
+        "Managers can export class attendance reports as CSV or PDF",
+        "Teachers can edit or correct attendance entries after a class period",
+        "Attendance data must sync in real time across teacher and admin dashboards",
+        "The attendance workflow must remain available during class hours with minimal downtime",
+        "Student and attendance records must be protected with access controls for staff roles",
+        "The system must retain attendance history for the academic term and audit review",
+        "Attendance dashboards must remain readable on classroom tablets and laptops"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 3.391
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance via a QR-code scan at the start of each class, with the system automatically recording the timestamp and class location.",
+        "Students can view their own attendance records in real-time through the mobile app, including daily, weekly, and monthly summaries with color-coded indicators for attendance status.",
+        "Parents receive an SMS alert within 2 minutes when their child is marked absent without prior notification, including the reason (if provided by the teacher).",
+        "The system enforces a 10-minute grace period for late arrivals, after which students are marked absent unless the teacher overrides the status with a valid reason.",
+        "Admins can generate a biometric attendance report for compliance with state education department regulations, including daily attendance percentages and tardy/absent breakdowns by class.",
+        "Teachers can submit a bulk attendance correction request for a previous class if an error is detected, with the request routed to the admin for approval within 24 hours.",
+        "The system integrates with the school\u2019s existing student information system (SIS) to auto-populate class rosters and teacher assignments at the start of each semester.",
+        "Students can submit a leave request through the app for planned absences, which must be approved by the teacher and admin before the absence is excused in the system.",
+        "The system must support a minimum of 500 concurrent teacher logins during peak class hours (8:00 AM - 3:00 PM) to ensure real-time attendance marking without delays.",
+        "Attendance data must sync within 3 seconds across all devices to ensure teachers and admins see live counts during class without refreshing the interface.",
+        "The mobile app must consume less than 5MB of data per month for attendance tracking to accommodate students with limited mobile data plans.",
+        "The system must retain attendance records for a minimum of 5 years to comply with state education department audit requirements.",
+        "The QR-code attendance system must function reliably in low-light conditions (e.g., during evening classes) with a minimum 95% scan success rate."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Requirements Analysis & Prioritization"
+          },
+          {
+            "id": "T2",
+            "name": "System Architecture Design"
+          },
+          {
+            "id": "T3",
+            "name": "Database Schema Design"
+          },
+          {
+            "id": "T4",
+            "name": "API Design & Documentation"
+          },
+          {
+            "id": "T5",
+            "name": "QR-Code Generation & Scanning Module"
+          },
+          {
+            "id": "T6",
+            "name": "Mobile App UI/UX Design"
+          },
+          {
+            "id": "T7",
+            "name": "SMS Gateway Integration"
+          },
+          {
+            "id": "T8",
+            "name": "SIS Integration Module"
+          },
+          {
+            "id": "T9",
+            "name": "Backend Development (Attendance Marking)"
+          },
+          {
+            "id": "T10",
+            "name": "Mobile App Development (Student & Parent Views)"
+          },
+          {
+            "id": "T11",
+            "name": "Admin Dashboard & Reporting Module"
+          },
+          {
+            "id": "T12",
+            "name": "Teacher Portal & Correction Request System"
+          },
+          {
+            "id": "T13",
+            "name": "Performance Optimization (500 concurrent logins, 3s sync)"
+          },
+          {
+            "id": "T14",
+            "name": "Data Retention & Compliance Module"
+          },
+          {
+            "id": "T15",
+            "name": "Low-Light QR-Code Scanning Testing"
+          },
+          {
+            "id": "T16",
+            "name": "Unit Testing (All Modules)"
+          },
+          {
+            "id": "T17",
+            "name": "Integration Testing (SIS, SMS, QR-Code)"
+          },
+          {
+            "id": "T18",
+            "name": "Load Testing (500 concurrent users)"
+          },
+          {
+            "id": "T19",
+            "name": "Security & Compliance Testing"
+          },
+          {
+            "id": "T20",
+            "name": "User Acceptance Testing (UAT)"
+          },
+          {
+            "id": "T21",
+            "name": "Staging Environment Deployment"
+          },
+          {
+            "id": "T22",
+            "name": "Production Deployment (Phased Rollout)"
+          },
+          {
+            "id": "T23",
+            "name": "Monitoring & Incident Response Setup"
+          },
+          {
+            "id": "T24",
+            "name": "User Training & Documentation"
+          },
+          {
+            "id": "T25",
+            "name": "Post-Deployment Support & Bug Fixes"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T6"
+          },
+          {
+            "from": "T2",
+            "to": "T7"
+          },
+          {
+            "from": "T2",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T9"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T3",
+            "to": "T12"
+          },
+          {
+            "from": "T3",
+            "to": "T14"
+          },
+          {
+            "from": "T4",
+            "to": "T9"
+          },
+          {
+            "from": "T4",
+            "to": "T11"
+          },
+          {
+            "from": "T4",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T9"
+          },
+          {
+            "from": "T5",
+            "to": "T15"
+          },
+          {
+            "from": "T5",
+            "to": "T17"
+          },
+          {
+            "from": "T6",
+            "to": "T10"
+          },
+          {
+            "from": "T7",
+            "to": "T17"
+          },
+          {
+            "from": "T8",
+            "to": "T17"
+          },
+          {
+            "from": "T9",
+            "to": "T13"
+          },
+          {
+            "from": "T9",
+            "to": "T16"
+          },
+          {
+            "from": "T10",
+            "to": "T13"
+          },
+          {
+            "from": "T10",
+            "to": "T16"
+          },
+          {
+            "from": "T11",
+            "to": "T13"
+          },
+          {
+            "from": "T11",
+            "to": "T16"
+          },
+          {
+            "from": "T12",
+            "to": "T16"
+          },
+          {
+            "from": "T13",
+            "to": "T16"
+          },
+          {
+            "from": "T13",
+            "to": "T18"
+          },
+          {
+            "from": "T14",
+            "to": "T16"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          },
+          {
+            "from": "T17",
+            "to": "T18"
+          },
+          {
+            "from": "T17",
+            "to": "T19"
+          },
+          {
+            "from": "T18",
+            "to": "T20"
+          },
+          {
+            "from": "T19",
+            "to": "T20"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T21",
+            "to": "T22"
+          },
+          {
+            "from": "T22",
+            "to": "T23"
+          },
+          {
+            "from": "T22",
+            "to": "T24"
+          },
+          {
+            "from": "T23",
+            "to": "T25"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Requirements Analysis & Prioritization",
+          "risk": "Misalignment between school policies and system requirements due to unclear stakeholder expectations.",
+          "severity": "High",
+          "mitigation": "Conduct detailed workshops with school administrators, teachers, and parents to validate and prioritize requirements before proceeding."
+        },
+        {
+          "stage": "System Architecture Design",
+          "risk": "Over-engineering the system for scalability without considering the actual user load or budget constraints.",
+          "severity": "Medium",
+          "mitigation": "Base architecture on realistic usage patterns (e.g., 500 concurrent users) and align with budget and timeline constraints."
+        },
+        {
+          "stage": "Database Schema Design",
+          "risk": "Poor schema design leading to slow attendance marking or reporting queries during peak times.",
+          "severity": "High",
+          "mitigation": "Design schema with indexing strategies for frequent queries (e.g., attendance by date/class) and validate with sample data early."
+        },
+        {
+          "stage": "API Design & Documentation",
+          "risk": "APIs not being intuitive or missing critical endpoints needed for mobile app or SIS integration.",
+          "severity": "High",
+          "mitigation": "Involve mobile and SIS teams in API design reviews and provide mock endpoints early for validation."
+        },
+        {
+          "stage": "QR-Code Generation & Scanning Module",
+          "risk": "QR codes failing to scan reliably in low-light conditions or generating duplicates.",
+          "severity": "High",
+          "mitigation": "Test QR code generation and scanning under varied lighting conditions and implement uniqueness checks in the database."
+        },
+        {
+          "stage": "Mobile App UI/UX Design",
+          "risk": "Overly complex UI causing confusion for teachers or parents with low tech literacy.",
+          "severity": "Medium",
+          "mitigation": "Conduct usability testing with target users (teachers/parents) and simplify workflows based on feedback."
+        },
+        {
+          "stage": "SMS Gateway Integration",
+          "risk": "SMS delivery delays or failures due to unreliable third-party gateway or rate limits.",
+          "severity": "High",
+          "mitigation": "Select a reputable SMS provider with SLAs, implement retry logic, and monitor delivery status in real-time."
+        },
+        {
+          "stage": "SIS Integration Module",
+          "risk": "Data mismatch between the attendance system and SIS due to schema or sync timing issues.",
+          "severity": "High",
+          "mitigation": "Define clear data mapping rules, implement validation checks, and schedule sync during off-peak hours."
+        },
+        {
+          "stage": "Backend Development (Attendance Marking)",
+          "risk": "Race conditions or timeouts during high-volume attendance marking causing data loss.",
+          "severity": "High",
+          "mitigation": "Implement transaction locks, batch processing, and async queues for high-traffic periods."
+        },
+        {
+          "stage": "Mobile App Development (Student & Parent Views)",
+          "risk": "App crashes or slow performance on low-end devices due to unoptimized UI or background sync.",
+          "severity": "Medium",
+          "mitigation": "Profile app performance on low-end devices and optimize image assets, network calls, and database queries."
+        },
+        {
+          "stage": "Admin Dashboard & Reporting Module",
+          "risk": "Incorrect or misleading reports due to data aggregation errors or missing filters.",
+          "severity": "High",
+          "mitigation": "Validate reports with sample data and involve school admins in UAT to ensure accuracy and relevance."
+        },
+        {
+          "stage": "Teacher Portal & Correction Request System",
+          "risk": "Teachers bypassing the correction process due to cumbersome workflows, leading to inaccurate attendance records.",
+          "severity": "Medium",
+          "mitigation": "Design a simple correction request flow with minimal clicks and provide clear error messages for rejected requests."
+        },
+        {
+          "stage": "Performance Optimization (500 concurrent logins, 3s sync)",
+          "risk": "System failing to meet performance targets under load due to unoptimized database or API responses.",
+          "severity": "High",
+          "mitigation": "Conduct load testing early and optimize critical paths (e.g., caching, query tuning, CDN usage)."
+        },
+        {
+          "stage": "Data Retention & Compliance Module",
+          "risk": "Non-compliance with local education data retention laws due to incorrect retention period settings.",
+          "severity": "High",
+          "mitigation": "Consult legal experts to define retention policies and implement automated data purging with audit logs."
+        },
+        {
+          "stage": "Low-Light QR-Code Scanning Testing",
+          "risk": "QR codes failing to scan in low-light conditions, disrupting attendance marking in evening classes.",
+          "severity": "Medium",
+          "mitigation": "Test QR scanning with varied lighting conditions and implement fallback mechanisms (e.g., manual entry or alternative codes)."
+        },
+        {
+          "stage": "Unit Testing (All Modules)",
+          "risk": "Insufficient test coverage leading to undetected bugs in critical modules like attendance marking or SMS sending.",
+          "severity": "High",
+          "mitigation": "Enforce 100% unit test coverage for core modules and integrate testing into CI/CD pipelines."
+        },
+        {
+          "stage": "Integration Testing (SIS, SMS, QR-Code)",
+          "risk": "Integration failures due to changes in third-party APIs or data formats not being detected early.",
+          "severity": "High",
+          "mitigation": "Implement contract testing for third-party integrations and run integration tests in a staging environment mirroring production."
+        },
+        {
+          "stage": "Load Testing (500 concurrent users)",
+          "risk": "System crashing under load due to unoptimized backend or database bottlenecks.",
+          "severity": "High",
+          "mitigation": "Conduct load testing with realistic user scenarios and scale resources (e.g., database read replicas, load balancers) as needed."
+        },
+        {
+          "stage": "Security & Compliance Testing",
+          "risk": "Exposure of sensitive student data due to weak authentication or unencrypted data transmission.",
+          "severity": "High",
+          "mitigation": "Implement role-based access control, encrypt data at rest and in transit, and conduct penetration testing before deployment."
+        },
+        {
+          "stage": "User Acceptance Testing (UAT)",
+          "risk": "School stakeholders rejecting the system due to misaligned expectations or usability issues.",
+          "severity": "High",
+          "mitigation": "Involve stakeholders in early prototypes and UAT, and document all feedback for iterative improvements."
+        },
+        {
+          "stage": "Staging Environment Deployment",
+          "risk": "Staging environment not mirroring production, leading to undetected issues during final testing.",
+          "severity": "High",
+          "mitigation": "Ensure staging environment is identical to production in terms of software versions, data volume, and configurations."
+        },
+        {
+          "stage": "Production Deployment (Phased Rollout)",
+          "risk": "Widespread system outage or data corruption due to untested deployment scripts or rollback failures.",
+          "severity": "High",
+          "mitigation": "Deploy in phases with rollback plans, monitor key metrics post-deployment, and conduct dry runs in staging."
+        },
+        {
+          "stage": "Monitoring & Incident Response Setup",
+          "risk": "Delayed detection of system failures or security breaches due to inadequate monitoring tools.",
+          "severity": "High",
+          "mitigation": "Implement real-time monitoring for critical metrics (e.g., API latency, error rates) and define clear incident response procedures."
+        },
+        {
+          "stage": "User Training & Documentation",
+          "risk": "Low adoption of the system due to poor training materials or lack of hands-on sessions for teachers and parents.",
+          "severity": "Medium",
+          "mitigation": "Develop role-specific training videos and guides, and conduct live training sessions for teachers and parents."
+        },
+        {
+          "stage": "Post-Deployment Support & Bug Fixes",
+          "risk": "Unresolved critical bugs affecting daily operations due to inadequate support staff or slow response times.",
+          "severity": "High",
+          "mitigation": "Establish a dedicated support team with clear SLAs for bug fixes and escalation paths for urgent issues."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.571,
+        "risk_coverage": 1.0,
+        "validation_score": 91.43
+      },
+      "response_time_seconds": 25.683
+    }
+  },
+  "scores": {
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.16154654830044,
+      "overall_score": 66.47
+    },
+    "llama": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 92.26725849783904,
+      "overall_score": 65.98
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 86.79671377954288,
+      "overall_score": 65.43
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 57.099999999999994,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 81.42
+    }
+  },
+  "best_model": "mistral"
+}

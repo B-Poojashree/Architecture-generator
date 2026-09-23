@@ -1,0 +1,1177 @@
+{
+  "timestamp": 1786603249,
+  "project_description": "food tracking systen",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": false,
+      "error": "[Errno 13] Permission denied: 'outputs\\\\architecture_diagrams\\\\workflow_architecture'",
+      "response_time_seconds": 2.457
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "Food logging must be available offline and sync when online",
+        "Food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 1.04
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "Food logging must be available offline and sync when online",
+        "Food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 6.239
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [
+        "Dieters can log their daily food intake by scanning barcodes of packaged foods or searching a database of common foods",
+        "Nutritionists can create personalized meal plans for clients based on their dietary goals and restrictions",
+        "Users can track their macronutrient intake and receive alerts when they exceed daily limits",
+        "Caregivers can monitor the eating habits of their dependents and receive notifications when a dependent's food intake is outside of a healthy range",
+        "Chefs can create and share recipes with nutritional information and cooking instructions",
+        "Food manufacturers can upload and manage nutritional data for their products",
+        "Dieters can track their progress over time and receive recommendations for improving their diet based on their eating habits",
+        "Health coaches can access client food diaries and provide feedback and guidance on healthy eating habits",
+        "The system must be able to handle a high volume of barcode scans and food searches during peak meal times",
+        "Nutritional data must be updated at least quarterly to reflect changes in food composition and dietary guidelines",
+        "The system must be able to integrate with popular fitness trackers and health apps to track physical activity and other health metrics",
+        "Food diaries must be accessible offline and sync with the server when internet connection is restored",
+        "The system must comply with FDA regulations for food labeling and nutritional content claims"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Requirements Analysis"
+          },
+          {
+            "id": "T2",
+            "name": "System Design"
+          },
+          {
+            "id": "T3",
+            "name": "Database Design"
+          },
+          {
+            "id": "T4",
+            "name": "User Interface Design"
+          },
+          {
+            "id": "T5",
+            "name": "Backend Implementation"
+          },
+          {
+            "id": "T6",
+            "name": "Frontend Implementation"
+          },
+          {
+            "id": "T7",
+            "name": "Barcode Scanning Feature"
+          },
+          {
+            "id": "T8",
+            "name": "Food Database Integration"
+          },
+          {
+            "id": "T9",
+            "name": "Nutritionist Meal Plan Feature"
+          },
+          {
+            "id": "T10",
+            "name": "Macronutrient Tracking Feature"
+          },
+          {
+            "id": "T11",
+            "name": "Caregiver Monitoring Feature"
+          },
+          {
+            "id": "T12",
+            "name": "Chef Recipe Feature"
+          },
+          {
+            "id": "T13",
+            "name": "Food Manufacturer Data Upload"
+          },
+          {
+            "id": "T14",
+            "name": "Progress Tracking Feature"
+          },
+          {
+            "id": "T15",
+            "name": "Health Coach Access Feature"
+          },
+          {
+            "id": "T16",
+            "name": "High Volume Testing"
+          },
+          {
+            "id": "T17",
+            "name": "Offline Access Feature"
+          },
+          {
+            "id": "T18",
+            "name": "Fitness Tracker Integration"
+          },
+          {
+            "id": "T19",
+            "name": "FDA Compliance Review"
+          },
+          {
+            "id": "T20",
+            "name": "Unit Testing"
+          },
+          {
+            "id": "T21",
+            "name": "Integration Testing"
+          },
+          {
+            "id": "T22",
+            "name": "System Testing"
+          },
+          {
+            "id": "T23",
+            "name": "Deployment Planning"
+          },
+          {
+            "id": "T24",
+            "name": "Deployment"
+          },
+          {
+            "id": "T25",
+            "name": "Post-Deployment Review"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T3",
+            "to": "T5"
+          },
+          {
+            "from": "T4",
+            "to": "T6"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T8"
+          },
+          {
+            "from": "T5",
+            "to": "T9"
+          },
+          {
+            "from": "T5",
+            "to": "T10"
+          },
+          {
+            "from": "T5",
+            "to": "T11"
+          },
+          {
+            "from": "T5",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T13"
+          },
+          {
+            "from": "T5",
+            "to": "T14"
+          },
+          {
+            "from": "T5",
+            "to": "T15"
+          },
+          {
+            "from": "T5",
+            "to": "T17"
+          },
+          {
+            "from": "T5",
+            "to": "T18"
+          },
+          {
+            "from": "T5",
+            "to": "T19"
+          },
+          {
+            "from": "T5",
+            "to": "T20"
+          },
+          {
+            "from": "T6",
+            "to": "T7"
+          },
+          {
+            "from": "T6",
+            "to": "T9"
+          },
+          {
+            "from": "T6",
+            "to": "T10"
+          },
+          {
+            "from": "T6",
+            "to": "T11"
+          },
+          {
+            "from": "T6",
+            "to": "T12"
+          },
+          {
+            "from": "T6",
+            "to": "T14"
+          },
+          {
+            "from": "T6",
+            "to": "T15"
+          },
+          {
+            "from": "T6",
+            "to": "T17"
+          },
+          {
+            "from": "T6",
+            "to": "T18"
+          },
+          {
+            "from": "T6",
+            "to": "T19"
+          },
+          {
+            "from": "T6",
+            "to": "T20"
+          },
+          {
+            "from": "T7",
+            "to": "T16"
+          },
+          {
+            "from": "T7",
+            "to": "T20"
+          },
+          {
+            "from": "T8",
+            "to": "T13"
+          },
+          {
+            "from": "T8",
+            "to": "T16"
+          },
+          {
+            "from": "T8",
+            "to": "T19"
+          },
+          {
+            "from": "T8",
+            "to": "T20"
+          },
+          {
+            "from": "T9",
+            "to": "T16"
+          },
+          {
+            "from": "T9",
+            "to": "T20"
+          },
+          {
+            "from": "T10",
+            "to": "T16"
+          },
+          {
+            "from": "T10",
+            "to": "T20"
+          },
+          {
+            "from": "T11",
+            "to": "T16"
+          },
+          {
+            "from": "T11",
+            "to": "T20"
+          },
+          {
+            "from": "T12",
+            "to": "T16"
+          },
+          {
+            "from": "T12",
+            "to": "T20"
+          },
+          {
+            "from": "T13",
+            "to": "T16"
+          },
+          {
+            "from": "T13",
+            "to": "T19"
+          },
+          {
+            "from": "T13",
+            "to": "T20"
+          },
+          {
+            "from": "T14",
+            "to": "T16"
+          },
+          {
+            "from": "T14",
+            "to": "T20"
+          },
+          {
+            "from": "T15",
+            "to": "T16"
+          },
+          {
+            "from": "T15",
+            "to": "T20"
+          },
+          {
+            "from": "T17",
+            "to": "T20"
+          },
+          {
+            "from": "T18",
+            "to": "T20"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T21",
+            "to": "T22"
+          },
+          {
+            "from": "T22",
+            "to": "T23"
+          },
+          {
+            "from": "T23",
+            "to": "T24"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Requirements Analysis",
+          "risk": "Inaccurate or incomplete capture of nutritional and dietary requirements may lead to flawed system design.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder interviews and surveys to validate requirements."
+        },
+        {
+          "stage": "System Design",
+          "risk": "Inadequate consideration of data privacy and security may compromise sensitive user health information.",
+          "severity": "High",
+          "mitigation": "Engage a security expert to review and enhance the system design."
+        },
+        {
+          "stage": "Database Design",
+          "risk": "Inefficient database schema may hinder performance and scalability of the food tracking system.",
+          "severity": "Medium",
+          "mitigation": "Utilize a database modeling tool to optimize schema design and ensure data normalization."
+        },
+        {
+          "stage": "User Interface Design",
+          "risk": "Poorly designed user interface may lead to low user adoption and engagement with the food tracking system.",
+          "severity": "Medium",
+          "mitigation": "Conduct user experience (UX) research and testing to inform and refine the interface design."
+        },
+        {
+          "stage": "Backend Implementation",
+          "risk": "Insecure backend implementation may expose the system to vulnerabilities and data breaches.",
+          "severity": "High",
+          "mitigation": "Implement secure coding practices, such as input validation and secure authentication protocols."
+        },
+        {
+          "stage": "Frontend Implementation",
+          "risk": "Incompatible or outdated frontend technologies may cause cross-browser and device compatibility issues.",
+          "severity": "Medium",
+          "mitigation": "Utilize modern, widely-supported frontend frameworks and conduct thorough cross-browser testing."
+        },
+        {
+          "stage": "Barcode Scanning Feature",
+          "risk": "Inaccurate or incomplete barcode scanning may lead to incorrect food tracking and nutrition data.",
+          "severity": "Medium",
+          "mitigation": "Implement a robust barcode scanning algorithm and validate against a comprehensive food database."
+        },
+        {
+          "stage": "Food Database Integration",
+          "risk": "Outdated or incomplete food database may compromise the accuracy of nutrition tracking and meal planning features.",
+          "severity": "High",
+          "mitigation": "Establish a data partnership with a reputable food database provider to ensure regular updates and expansions."
+        },
+        {
+          "stage": "Nutritionist Meal Plan Feature",
+          "risk": "Inadequate or inaccurate nutritionist meal planning may lead to unhealthy or ineffective meal recommendations.",
+          "severity": "High",
+          "mitigation": "Collaborate with licensed nutritionists to develop and review meal planning algorithms and guidelines."
+        },
+        {
+          "stage": "Macronutrient Tracking Feature",
+          "risk": "Inaccurate or incomplete macronutrient tracking may compromise the effectiveness of nutrition planning and tracking.",
+          "severity": "Medium",
+          "mitigation": "Implement a robust macronutrient calculation algorithm and validate against a comprehensive food database."
+        },
+        {
+          "stage": "Caregiver Monitoring Feature",
+          "risk": "Inadequate or insecure caregiver monitoring may compromise the privacy and safety of users, particularly vulnerable populations.",
+          "severity": "High",
+          "mitigation": "Implement robust access controls, encryption, and secure authentication protocols to protect user data."
+        },
+        {
+          "stage": "Chef Recipe Feature",
+          "risk": "Inadequate or inaccurate chef recipe integration may lead to incorrect or unhealthy meal planning and preparation.",
+          "severity": "Medium",
+          "mitigation": "Collaborate with experienced chefs to develop and review recipe algorithms and guidelines."
+        },
+        {
+          "stage": "Food Manufacturer Data Upload",
+          "risk": "Inaccurate or incomplete food manufacturer data may compromise the accuracy of nutrition tracking and meal planning features.",
+          "severity": "Medium",
+          "mitigation": "Establish a data validation process to ensure accuracy and completeness of uploaded data."
+        },
+        {
+          "stage": "Progress Tracking Feature",
+          "risk": "Inaccurate or incomplete progress tracking may lead to ineffective or misleading user feedback and motivation.",
+          "severity": "Medium",
+          "mitigation": "Implement a robust progress tracking algorithm and validate against user feedback and testing."
+        },
+        {
+          "stage": "Health Coach Access Feature",
+          "risk": "Inadequate or insecure health coach access may compromise the privacy and safety of users, particularly sensitive health information.",
+          "severity": "High",
+          "mitigation": "Implement robust access controls, encryption, and secure authentication protocols to protect user data."
+        },
+        {
+          "stage": "High Volume Testing",
+          "risk": "Inadequate high-volume testing may lead to performance and scalability issues in production, compromising user experience.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough high-volume testing, including load testing and stress testing, to identify and address performance bottlenecks."
+        },
+        {
+          "stage": "Offline Access Feature",
+          "risk": "Inadequate or insecure offline access may compromise the availability and integrity of user data, particularly in areas with limited connectivity.",
+          "severity": "Medium",
+          "mitigation": "Implement a robust offline access strategy, including data caching and synchronization, to ensure seamless user experience."
+        },
+        {
+          "stage": "Fitness Tracker Integration",
+          "risk": "Incompatible or insecure fitness tracker integration may compromise the accuracy and effectiveness of fitness tracking and nutrition planning.",
+          "severity": "Medium",
+          "mitigation": "Collaborate with fitness tracker manufacturers to develop and test secure and compatible integration protocols."
+        },
+        {
+          "stage": "FDA Compliance Review",
+          "risk": "Non-compliance with FDA regulations may result in legal and reputational risks, particularly regarding food safety and labeling.",
+          "severity": "High",
+          "mitigation": "Engage FDA compliance experts to review and ensure adherence to relevant regulations and guidelines."
+        },
+        {
+          "stage": "Unit Testing",
+          "risk": "Inadequate unit testing may lead to undetected bugs and defects, compromising the overall quality and reliability of the system.",
+          "severity": "Medium",
+          "mitigation": "Implement a comprehensive unit testing strategy, including automated testing and code review, to ensure thorough coverage and validation."
+        },
+        {
+          "stage": "Integration Testing",
+          "risk": "Inadequate integration testing may lead to undetected integration issues and defects, compromising the overall functionality and performance of the system.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough integration testing, including API testing and system integration testing, to ensure seamless interactions between components."
+        },
+        {
+          "stage": "System Testing",
+          "risk": "Inadequate system testing may lead to undetected system-level issues and defects, compromising the overall quality and reliability of the system.",
+          "severity": "Medium",
+          "mitigation": "Conduct comprehensive system testing, including end-to-end testing and user acceptance testing, to ensure thorough validation and verification."
+        },
+        {
+          "stage": "Deployment Planning",
+          "risk": "Inadequate deployment planning may lead to delays, downtime, or data loss during deployment, compromising user experience and system availability.",
+          "severity": "Medium",
+          "mitigation": "Develop a comprehensive deployment plan, including rollback strategies and contingency planning, to ensure smooth and reliable deployment."
+        },
+        {
+          "stage": "Deployment",
+          "risk": "Deployment errors or issues may compromise the availability and integrity of the system, particularly if not properly tested and validated.",
+          "severity": "High",
+          "mitigation": "Conduct thorough deployment testing and validation, including smoke testing and sanity testing, to ensure reliable and smooth deployment."
+        },
+        {
+          "stage": "Post-Deployment Review",
+          "risk": "Inadequate post-deployment review may lead to undetected issues or defects, compromising the overall quality and reliability of the system.",
+          "severity": "Medium",
+          "mitigation": "Conduct a comprehensive post-deployment review, including user feedback and system monitoring, to identify and address any issues or defects."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.857,
+        "risk_coverage": 1.0,
+        "validation_score": 97.14
+      },
+      "response_time_seconds": 9.673
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Nutritionists can log a patient's daily food intake by scanning barcodes of packaged foods, ensuring accurate macronutrient and calorie tracking for dietary assessments.",
+        "Patients can manually enter custom meals by selecting individual ingredients from a searchable database, with the system automatically calculating total nutritional values based on portion sizes.",
+        "Dietitians can set personalized daily calorie and macro targets for patients, with the system flagging deviations of more than 10% from the prescribed goals.",
+        "Patients can view their weekly food tracking trends in a color-coded bar chart, with red indicating overconsumption of target nutrients and green showing adherence to dietary guidelines.",
+        "Caregivers (e.g., parents for children or assistants for elderly patients) can receive push notifications when a patient's logged intake falls below 80% of their daily calorie target.",
+        "Chefs in meal-prep facilities can export a patient's dietary restrictions as a formatted recipe list, ensuring meals are prepared according to clinical nutrition requirements.",
+        "Endocrinologists can integrate the system with continuous glucose monitors (CGMs) to correlate food intake with blood glucose spikes, generating reports for diabetes management.",
+        "Food tracking data can be exported as a PDF report with HIPAA-compliant formatting, including a breakdown of macronutrients, micronutrients, and meal timing for clinical review.",
+        "The system must support offline food logging with automatic synchronization to the cloud within 30 seconds of regaining connectivity, ensuring data integrity for patients in areas with intermittent internet access.",
+        "Nutritional calculations must use a USDA FoodData Central API with a maximum latency of 2 seconds to prevent delays during patient consultations.",
+        "The mobile app must maintain a minimum battery consumption of less than 5% per hour during active food logging sessions to avoid disrupting patient routines.",
+        "All food entries must be stored with a timestamp accurate to the minute to enable precise correlation with medical events (e.g., insulin doses or blood pressure readings).",
+        "The system must comply with FDA guidelines for dietary supplement labeling, ensuring that any logged supplements are cross-referenced with their nutritional content."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define system architecture and high-level design"
+          },
+          {
+            "id": "T2",
+            "name": "Design database schema for food entries, patient profiles, and nutritional data"
+          },
+          {
+            "id": "T3",
+            "name": "Design API endpoints for barcode scanning, manual entry, and nutritional calculations"
+          },
+          {
+            "id": "T4",
+            "name": "Design user interfaces for nutritionists, patients, dietitians, and caregivers"
+          },
+          {
+            "id": "T5",
+            "name": "Set up USDA FoodData Central API integration with caching layer"
+          },
+          {
+            "id": "T6",
+            "name": "Implement barcode scanning functionality with offline support"
+          },
+          {
+            "id": "T7",
+            "name": "Implement manual food entry with ingredient search and nutritional calculation"
+          },
+          {
+            "id": "T8",
+            "name": "Implement dietitian target setting and deviation alerting system"
+          },
+          {
+            "id": "T9",
+            "name": "Implement weekly trend visualization with color-coded charts"
+          },
+          {
+            "id": "T10",
+            "name": "Implement caregiver push notification system for low calorie intake"
+          },
+          {
+            "id": "T11",
+            "name": "Implement recipe export functionality for chefs"
+          },
+          {
+            "id": "T12",
+            "name": "Implement CGM integration and glucose correlation reporting"
+          },
+          {
+            "id": "T13",
+            "name": "Implement HIPAA-compliant PDF report generation"
+          },
+          {
+            "id": "T14",
+            "name": "Implement offline data synchronization with conflict resolution"
+          },
+          {
+            "id": "T15",
+            "name": "Implement battery optimization for mobile app during active logging"
+          },
+          {
+            "id": "T16",
+            "name": "Implement FDA-compliant supplement labeling cross-referencing"
+          },
+          {
+            "id": "T17",
+            "name": "Develop unit tests for nutritional calculations and API integrations"
+          },
+          {
+            "id": "T18",
+            "name": "Develop integration tests for end-to-end food logging workflows"
+          },
+          {
+            "id": "T19",
+            "name": "Conduct performance testing for USDA API latency and battery consumption"
+          },
+          {
+            "id": "T20",
+            "name": "Conduct security and HIPAA compliance testing"
+          },
+          {
+            "id": "T21",
+            "name": "Perform user acceptance testing with nutritionists, dietitians, and patients"
+          },
+          {
+            "id": "T22",
+            "name": "Set up CI/CD pipeline with automated testing and deployment"
+          },
+          {
+            "id": "T23",
+            "name": "Deploy backend services to production cloud environment"
+          },
+          {
+            "id": "T24",
+            "name": "Deploy mobile app to app stores with phased rollout"
+          },
+          {
+            "id": "T25",
+            "name": "Monitor system performance and user feedback post-deployment"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T1",
+            "to": "T3"
+          },
+          {
+            "from": "T1",
+            "to": "T4"
+          },
+          {
+            "from": "T1",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T7"
+          },
+          {
+            "from": "T2",
+            "to": "T8"
+          },
+          {
+            "from": "T2",
+            "to": "T10"
+          },
+          {
+            "from": "T2",
+            "to": "T11"
+          },
+          {
+            "from": "T2",
+            "to": "T12"
+          },
+          {
+            "from": "T2",
+            "to": "T13"
+          },
+          {
+            "from": "T2",
+            "to": "T14"
+          },
+          {
+            "from": "T2",
+            "to": "T16"
+          },
+          {
+            "from": "T2",
+            "to": "T20"
+          },
+          {
+            "from": "T3",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T7"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T10"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T3",
+            "to": "T12"
+          },
+          {
+            "from": "T3",
+            "to": "T13"
+          },
+          {
+            "from": "T3",
+            "to": "T14"
+          },
+          {
+            "from": "T3",
+            "to": "T16"
+          },
+          {
+            "from": "T3",
+            "to": "T20"
+          },
+          {
+            "from": "T4",
+            "to": "T9"
+          },
+          {
+            "from": "T4",
+            "to": "T15"
+          },
+          {
+            "from": "T4",
+            "to": "T21"
+          },
+          {
+            "from": "T5",
+            "to": "T6"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T16"
+          },
+          {
+            "from": "T5",
+            "to": "T17"
+          },
+          {
+            "from": "T5",
+            "to": "T19"
+          },
+          {
+            "from": "T6",
+            "to": "T17"
+          },
+          {
+            "from": "T6",
+            "to": "T18"
+          },
+          {
+            "from": "T7",
+            "to": "T17"
+          },
+          {
+            "from": "T7",
+            "to": "T18"
+          },
+          {
+            "from": "T8",
+            "to": "T17"
+          },
+          {
+            "from": "T8",
+            "to": "T18"
+          },
+          {
+            "from": "T9",
+            "to": "T18"
+          },
+          {
+            "from": "T9",
+            "to": "T21"
+          },
+          {
+            "from": "T10",
+            "to": "T18"
+          },
+          {
+            "from": "T10",
+            "to": "T21"
+          },
+          {
+            "from": "T11",
+            "to": "T18"
+          },
+          {
+            "from": "T12",
+            "to": "T17"
+          },
+          {
+            "from": "T13",
+            "to": "T18"
+          },
+          {
+            "from": "T13",
+            "to": "T20"
+          },
+          {
+            "from": "T15",
+            "to": "T19"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          },
+          {
+            "from": "T17",
+            "to": "T22"
+          },
+          {
+            "from": "T18",
+            "to": "T22"
+          },
+          {
+            "from": "T19",
+            "to": "T22"
+          },
+          {
+            "from": "T20",
+            "to": "T22"
+          },
+          {
+            "from": "T22",
+            "to": "T23"
+          },
+          {
+            "from": "T22",
+            "to": "T24"
+          },
+          {
+            "from": "T23",
+            "to": "T24"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Define system architecture and high-level design",
+          "risk": "Overcomplicating the architecture by trying to support all user roles (nutritionists, patients, dietitians, caregivers) in a single monolithic system, leading to scalability and maintenance issues.",
+          "severity": "High",
+          "mitigation": "Adopt a modular microservices architecture with clear separation of concerns for each user role and functionality to ensure scalability and ease of maintenance."
+        },
+        {
+          "stage": "Design database schema for food entries, patient profiles, and nutritional data",
+          "risk": "Inadequate schema design for handling complex nutritional calculations and frequent updates, leading to performance bottlenecks or data inconsistencies.",
+          "severity": "High",
+          "mitigation": "Design a normalized schema with dedicated tables for nutritional data, food entries, and patient profiles, and implement caching for frequently accessed nutritional calculations."
+        },
+        {
+          "stage": "Design API endpoints for barcode scanning, manual entry, and nutritional calculations",
+          "risk": "API endpoints not optimized for high-frequency barcode scans or real-time nutritional calculations, causing latency or timeouts during peak usage.",
+          "severity": "High",
+          "mitigation": "Implement rate limiting, caching for USDA API responses, and asynchronous processing for nutritional calculations to ensure responsiveness."
+        },
+        {
+          "stage": "Design user interfaces for nutritionists, patients, dietitians, and caregivers",
+          "risk": "Poor UX design leading to confusion or errors in food logging, especially for patients with dietary restrictions or caregivers managing multiple patients.",
+          "severity": "Medium",
+          "mitigation": "Conduct iterative user testing with each role-specific group to refine UI/UX, focusing on simplicity and clarity for food entry and nutritional tracking."
+        },
+        {
+          "stage": "Set up USDA FoodData Central API integration with caching layer",
+          "risk": "USDA API rate limits or downtime disrupting food data retrieval, causing delays or failures in food logging and nutritional calculations.",
+          "severity": "High",
+          "mitigation": "Implement a robust caching layer with fallback data sources and exponential backoff for API retries to handle rate limits and outages gracefully."
+        },
+        {
+          "stage": "Implement barcode scanning functionality with offline support",
+          "risk": "Barcode scanning failing in offline mode due to incomplete local food database, leading to inaccurate or missing nutritional data.",
+          "severity": "High",
+          "mitigation": "Preload a comprehensive local food database with common barcodes and implement a sync mechanism to update the local cache periodically."
+        },
+        {
+          "stage": "Implement manual food entry with ingredient search and nutritional calculation",
+          "risk": "Manual entry inaccuracies or missing ingredient data leading to incorrect nutritional calculations, especially for homemade or unbranded foods.",
+          "severity": "High",
+          "mitigation": "Integrate a crowdsourced or verified ingredient database with validation checks and allow manual overrides for nutritional values."
+        },
+        {
+          "stage": "Implement dietitian target setting and deviation alerting system",
+          "risk": "False positives or negatives in deviation alerts due to incorrect target settings or inaccurate food logging data, leading to alert fatigue or missed critical deviations.",
+          "severity": "High",
+          "mitigation": "Implement configurable alert thresholds with machine learning to refine deviation detection over time and allow dietitians to adjust targets dynamically."
+        },
+        {
+          "stage": "Implement weekly trend visualization with color-coded charts",
+          "risk": "Misleading visualizations due to incorrect data aggregation or color-coding schemes, leading to misinterpretation of nutritional trends.",
+          "severity": "Medium",
+          "mitigation": "Use standardized color schemes (e.g., traffic light system) and validate data aggregation logic with dietitians to ensure accuracy and clarity."
+        },
+        {
+          "stage": "Implement caregiver push notification system for low calorie intake",
+          "risk": "Push notifications failing to trigger or being sent incorrectly due to unreliable calorie intake tracking or notification service issues.",
+          "severity": "Medium",
+          "mitigation": "Implement a robust notification queue with retry logic and real-time monitoring to ensure timely and accurate alerts."
+        },
+        {
+          "stage": "Implement recipe export functionality for chefs",
+          "risk": "Recipe exports missing critical nutritional data or containing formatting errors, leading to compliance issues or user dissatisfaction.",
+          "severity": "Medium",
+          "mitigation": "Validate exported recipes against FDA labeling requirements and conduct manual reviews for edge cases before deployment."
+        },
+        {
+          "stage": "Implement CGM integration and glucose correlation reporting",
+          "risk": "Inaccurate or delayed glucose data integration leading to incorrect correlation reports, undermining the system's clinical utility.",
+          "severity": "High",
+          "mitigation": "Implement strict data validation and synchronization checks with CGM devices, and provide clear error messages for data discrepancies."
+        },
+        {
+          "stage": "Implement HIPAA-compliant PDF report generation",
+          "risk": "PDF reports containing PHI exposed due to improper access controls or template errors, violating HIPAA compliance.",
+          "severity": "High",
+          "mitigation": "Use templating engines with strict access controls and conduct regular audits of generated reports to ensure PHI is properly redacted or secured."
+        },
+        {
+          "stage": "Implement offline data synchronization with conflict resolution",
+          "risk": "Data loss or corruption during offline sync due to poor conflict resolution logic, especially when multiple users edit the same patient's data.",
+          "severity": "High",
+          "mitigation": "Implement a last-write-wins strategy with user-visible conflict resolution prompts and audit logs to track changes."
+        },
+        {
+          "stage": "Implement battery optimization for mobile app during active logging",
+          "risk": "Poor battery optimization leading to app abandonment by users who rely on continuous logging for dietary tracking.",
+          "severity": "Medium",
+          "mitigation": "Conduct battery profiling tests and implement background task optimization, such as reducing GPS polling and batching API calls."
+        },
+        {
+          "stage": "Implement FDA-compliant supplement labeling cross-referencing",
+          "risk": "Incorrect or outdated supplement data leading to non-compliance with FDA labeling requirements, exposing the project to legal risks.",
+          "severity": "High",
+          "mitigation": "Regularly update the supplement database with FDA-approved sources and implement automated compliance checks for label accuracy."
+        },
+        {
+          "stage": "Develop unit tests for nutritional calculations and API integrations",
+          "risk": "Incomplete or incorrect unit tests leading to undetected bugs in nutritional calculations or API integrations, causing runtime errors.",
+          "severity": "Medium",
+          "mitigation": "Develop test cases for edge cases (e.g., zero-calorie foods, API timeouts) and involve dietitians in validating nutritional calculation logic."
+        },
+        {
+          "stage": "Develop integration tests for end-to-end food logging workflows",
+          "risk": "Integration tests missing critical user journeys, such as switching between manual entry and barcode scanning, leading to undetected workflow failures.",
+          "severity": "Medium",
+          "mitigation": "Map all user journeys and automate integration tests for each path, including error recovery scenarios."
+        },
+        {
+          "stage": "Conduct performance testing for USDA API latency and battery consumption",
+          "risk": "Performance bottlenecks in USDA API calls or battery drain going undetected, leading to poor user experience in production.",
+          "severity": "High",
+          "mitigation": "Simulate high-load scenarios and conduct battery profiling to identify and address performance issues before deployment."
+        },
+        {
+          "stage": "Conduct security and HIPAA compliance testing",
+          "risk": "Undetected vulnerabilities in data storage, transmission, or access controls leading to HIPAA violations or data breaches.",
+          "severity": "High",
+          "mitigation": "Conduct third-party security audits and penetration testing, with a focus on PHI handling and API security."
+        },
+        {
+          "stage": "Perform user acceptance testing with nutritionists, dietitians, and patients",
+          "risk": "User acceptance testing failing to uncover critical usability issues due to lack of diverse participant representation or unrealistic test scenarios.",
+          "severity": "Medium",
+          "mitigation": "Recruit a diverse group of testers, including patients with varying dietary needs, and simulate real-world scenarios in testing."
+        },
+        {
+          "stage": "Set up CI/CD pipeline with automated testing and deployment",
+          "risk": "CI/CD pipeline failures or undetected bugs slipping into production due to inadequate automated testing or rollback mechanisms.",
+          "severity": "High",
+          "mitigation": "Implement staged deployments with automated rollback triggers and comprehensive test coverage for all critical paths."
+        },
+        {
+          "stage": "Deploy backend services to production cloud environment",
+          "risk": "Cloud misconfigurations or scaling issues leading to downtime or performance degradation during peak usage.",
+          "severity": "High",
+          "mitigation": "Conduct load testing in a staging environment and implement auto-scaling policies with real-time monitoring for backend services."
+        },
+        {
+          "stage": "Deploy mobile app to app stores with phased rollout",
+          "risk": "App store rejection or negative user reviews due to compliance issues, bugs, or poor UX, delaying adoption and market penetration.",
+          "severity": "High",
+          "mitigation": "Pre-submission review for compliance (e.g., FDA, HIPAA) and conduct beta testing with a small user group to identify and fix critical issues."
+        },
+        {
+          "stage": "Monitor system performance and user feedback post-deployment",
+          "risk": "Undetected performance degradation or usability issues due to lack of proactive monitoring or user feedback channels, leading to user churn.",
+          "severity": "Medium",
+          "mitigation": "Implement real-time monitoring for performance metrics and user feedback, with automated alerts for critical issues."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.714,
+        "risk_coverage": 1.0,
+        "validation_score": 94.29
+      },
+      "response_time_seconds": 27.409
+    }
+  },
+  "scores": {
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 96.20562588930643,
+      "overall_score": 66.37
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 77.23740377248349,
+      "overall_score": 64.47
+    },
+    "llama": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 85.7,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 64.70867233390491,
+      "overall_score": 93.61
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 71.39999999999999,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 84.28
+    }
+  },
+  "best_model": "llama"
+}

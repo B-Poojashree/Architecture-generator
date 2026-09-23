@@ -1,0 +1,1216 @@
+{
+  "timestamp": 1786462619,
+  "project_description": "student attendance management system",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 2.316
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 3.482
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance via a QR-code scan at the start of each class",
+        "Parents receive an SMS alert when a student is marked absent for more than two consecutive days",
+        "Students can view their attendance history and track their progress through a web portal",
+        "Admins can generate attendance reports for individual students, classes, or the entire school",
+        "Teachers can add notes to a student's attendance record to explain excused absences",
+        "Parents can submit attendance excuses for their children through an online form",
+        "The system automatically flags students with low attendance rates for review by school administrators",
+        "Teachers can use a mobile app to take attendance during field trips or off-site events",
+        "Attendance data must sync within 5 seconds so teachers see live counts during class",
+        "The system must be able to handle 500 concurrent users during peak hours when teachers take attendance",
+        "The attendance database must be backed up daily to prevent data loss in case of a system failure",
+        "The system must comply with FERPA regulations to protect student attendance data",
+        "The mobile app for taking attendance must be compatible with both iOS and Android devices"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather Requirements"
+          },
+          {
+            "id": "T2",
+            "name": "Design Database Schema"
+          },
+          {
+            "id": "T3",
+            "name": "Design User Interface"
+          },
+          {
+            "id": "T4",
+            "name": "Design Mobile App"
+          },
+          {
+            "id": "T5",
+            "name": "Develop QR-Code Scanner"
+          },
+          {
+            "id": "T6",
+            "name": "Develop Attendance Tracking"
+          },
+          {
+            "id": "T7",
+            "name": "Develop SMS Alert System"
+          },
+          {
+            "id": "T8",
+            "name": "Develop Web Portal"
+          },
+          {
+            "id": "T9",
+            "name": "Develop Admin Reports"
+          },
+          {
+            "id": "T10",
+            "name": "Develop Mobile App"
+          },
+          {
+            "id": "T11",
+            "name": "Develop Online Excuse Form"
+          },
+          {
+            "id": "T12",
+            "name": "Develop Low Attendance Flagging"
+          },
+          {
+            "id": "T13",
+            "name": "Implement Data Syncing"
+          },
+          {
+            "id": "T14",
+            "name": "Implement Load Testing"
+          },
+          {
+            "id": "T15",
+            "name": "Implement FERPA Compliance"
+          },
+          {
+            "id": "T16",
+            "name": "Unit Testing"
+          },
+          {
+            "id": "T17",
+            "name": "Integration Testing"
+          },
+          {
+            "id": "T18",
+            "name": "System Testing"
+          },
+          {
+            "id": "T19",
+            "name": "User Acceptance Testing"
+          },
+          {
+            "id": "T20",
+            "name": "Deploy to Production"
+          },
+          {
+            "id": "T21",
+            "name": "Configure Daily Backups"
+          },
+          {
+            "id": "T22",
+            "name": "Monitor System Performance"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T1",
+            "to": "T3"
+          },
+          {
+            "from": "T1",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T6"
+          },
+          {
+            "from": "T2",
+            "to": "T7"
+          },
+          {
+            "from": "T2",
+            "to": "T8"
+          },
+          {
+            "from": "T2",
+            "to": "T9"
+          },
+          {
+            "from": "T2",
+            "to": "T10"
+          },
+          {
+            "from": "T2",
+            "to": "T11"
+          },
+          {
+            "from": "T2",
+            "to": "T12"
+          },
+          {
+            "from": "T3",
+            "to": "T5"
+          },
+          {
+            "from": "T3",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T7"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T9"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T3",
+            "to": "T12"
+          },
+          {
+            "from": "T4",
+            "to": "T10"
+          },
+          {
+            "from": "T5",
+            "to": "T13"
+          },
+          {
+            "from": "T5",
+            "to": "T16"
+          },
+          {
+            "from": "T6",
+            "to": "T13"
+          },
+          {
+            "from": "T6",
+            "to": "T16"
+          },
+          {
+            "from": "T7",
+            "to": "T13"
+          },
+          {
+            "from": "T7",
+            "to": "T16"
+          },
+          {
+            "from": "T8",
+            "to": "T13"
+          },
+          {
+            "from": "T8",
+            "to": "T16"
+          },
+          {
+            "from": "T9",
+            "to": "T13"
+          },
+          {
+            "from": "T9",
+            "to": "T16"
+          },
+          {
+            "from": "T10",
+            "to": "T13"
+          },
+          {
+            "from": "T10",
+            "to": "T16"
+          },
+          {
+            "from": "T11",
+            "to": "T13"
+          },
+          {
+            "from": "T11",
+            "to": "T16"
+          },
+          {
+            "from": "T12",
+            "to": "T13"
+          },
+          {
+            "from": "T12",
+            "to": "T16"
+          },
+          {
+            "from": "T13",
+            "to": "T14"
+          },
+          {
+            "from": "T13",
+            "to": "T15"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          },
+          {
+            "from": "T17",
+            "to": "T18"
+          },
+          {
+            "from": "T18",
+            "to": "T19"
+          },
+          {
+            "from": "T19",
+            "to": "T20"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T20",
+            "to": "T22"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Gather Requirements",
+          "risk": "Inadequate requirements gathering may lead to misunderstandings of stakeholder needs.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder interviews and workshops to validate requirements."
+        },
+        {
+          "stage": "Design Database Schema",
+          "risk": "Inefficient database schema design may result in poor data retrieval performance.",
+          "severity": "Medium",
+          "mitigation": "Utilize entity-relationship modeling and indexing to optimize database schema design."
+        },
+        {
+          "stage": "Design User Interface",
+          "risk": "Poor user interface design may lead to user frustration and low adoption rates.",
+          "severity": "Medium",
+          "mitigation": "Apply user-centered design principles and conduct usability testing to validate interface design."
+        },
+        {
+          "stage": "Design Mobile App",
+          "risk": "Inconsistent mobile app design may compromise user experience across different devices.",
+          "severity": "Medium",
+          "mitigation": "Develop a responsive design that adapts to various mobile devices and screen sizes."
+        },
+        {
+          "stage": "Develop QR-Code Scanner",
+          "risk": "QR-code scanner malfunction may cause attendance tracking errors.",
+          "severity": "High",
+          "mitigation": "Implement robust error handling and testing to ensure reliable QR-code scanning functionality."
+        },
+        {
+          "stage": "Develop Attendance Tracking",
+          "risk": "Inaccurate attendance tracking may lead to incorrect attendance records.",
+          "severity": "High",
+          "mitigation": "Implement data validation and verification processes to ensure accurate attendance tracking."
+        },
+        {
+          "stage": "Develop SMS Alert System",
+          "risk": "Unreliable SMS alert system may fail to notify stakeholders of important events.",
+          "severity": "Medium",
+          "mitigation": "Utilize a reputable SMS gateway service and implement retry mechanisms to ensure reliable message delivery."
+        },
+        {
+          "stage": "Develop Web Portal",
+          "risk": "Insecure web portal may expose sensitive user data to unauthorized access.",
+          "severity": "High",
+          "mitigation": "Implement robust security measures, including encryption and secure authentication protocols."
+        },
+        {
+          "stage": "Develop Admin Reports",
+          "risk": "Inaccurate or incomplete admin reports may compromise decision-making.",
+          "severity": "Medium",
+          "mitigation": "Develop reports with clear and concise data visualizations and implement data validation to ensure accuracy."
+        },
+        {
+          "stage": "Develop Mobile App",
+          "risk": "Mobile app security vulnerabilities may put user data at risk.",
+          "severity": "High",
+          "mitigation": "Implement secure coding practices, conduct regular security audits, and utilize secure data storage."
+        },
+        {
+          "stage": "Develop Online Excuse Form",
+          "risk": "Insecure online excuse form may allow unauthorized users to submit false excuses.",
+          "severity": "Medium",
+          "mitigation": "Implement secure authentication and authorization mechanisms to ensure only authorized users can submit excuses."
+        },
+        {
+          "stage": "Develop Low Attendance Flagging",
+          "risk": "Inaccurate low attendance flagging may incorrectly identify students as having low attendance.",
+          "severity": "Medium",
+          "mitigation": "Implement data validation and verification processes to ensure accurate attendance tracking and flagging."
+        },
+        {
+          "stage": "Implement Data Syncing",
+          "risk": "Data syncing errors may cause inconsistencies across different systems.",
+          "severity": "High",
+          "mitigation": "Implement robust data syncing mechanisms with error handling and logging to ensure data consistency."
+        },
+        {
+          "stage": "Implement Load Testing",
+          "risk": "Inadequate load testing may fail to identify performance bottlenecks.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough load testing with realistic user scenarios to identify and address performance issues."
+        },
+        {
+          "stage": "Implement FERPA Compliance",
+          "risk": "Non-compliance with FERPA regulations may result in legal and reputational consequences.",
+          "severity": "High",
+          "mitigation": "Collaborate with legal and compliance teams to ensure all systems and processes adhere to FERPA regulations."
+        },
+        {
+          "stage": "Unit Testing",
+          "risk": "Inadequate unit testing may allow defects to go undetected.",
+          "severity": "Medium",
+          "mitigation": "Develop comprehensive unit tests with high code coverage to ensure individual components function correctly."
+        },
+        {
+          "stage": "Integration Testing",
+          "risk": "Inadequate integration testing may fail to identify interoperability issues.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough integration testing to ensure seamless interactions between components and systems."
+        },
+        {
+          "stage": "System Testing",
+          "risk": "Inadequate system testing may allow critical defects to go undetected.",
+          "severity": "High",
+          "mitigation": "Develop comprehensive system tests that simulate real-world scenarios to ensure the system functions as expected."
+        },
+        {
+          "stage": "User Acceptance Testing",
+          "risk": "Inadequate user acceptance testing may fail to validate system functionality from a user perspective.",
+          "severity": "Medium",
+          "mitigation": "Involve end-users in the testing process to ensure the system meets their needs and expectations."
+        },
+        {
+          "stage": "Deploy to Production",
+          "risk": "Deployment errors may cause system downtime or data loss.",
+          "severity": "High",
+          "mitigation": "Develop a thorough deployment plan with rollback procedures and conduct deployment testing in a staging environment."
+        },
+        {
+          "stage": "Configure Daily Backups",
+          "risk": "Inadequate backup configuration may result in data loss in the event of a disaster.",
+          "severity": "High",
+          "mitigation": "Implement automated daily backups with redundancy and store backups in a secure, offsite location."
+        },
+        {
+          "stage": "Monitor System Performance",
+          "risk": "Inadequate performance monitoring may fail to identify issues before they impact users.",
+          "severity": "Medium",
+          "mitigation": "Implement real-time performance monitoring with alerts and notifications to quickly identify and address performance issues."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.714,
+        "risk_coverage": 1.0,
+        "validation_score": 94.29
+      },
+      "response_time_seconds": 8.421
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.978
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance via biometric fingerprint scan within 3 seconds of class start time to ensure real-time accuracy.",
+        "The system automatically generates a daily attendance report for each class and sends it to the principal's dashboard before 10:00 AM the next day.",
+        "Parents receive an instant push notification on their mobile app when their child is marked absent, including the reason (if provided by the teacher).",
+        "Students can view their own attendance history for the current semester through the student portal, filtered by course and date range.",
+        "The system enforces a 15-minute grace period for late arrivals; students marked late are flagged in red on the teacher's attendance sheet.",
+        "Admins can configure attendance thresholds (e.g., 85% minimum) per course, triggering automated email alerts to students who fall below the threshold.",
+        "Teachers can override attendance records for students with valid medical excuses, attaching supporting documents directly in the system.",
+        "The system integrates with the school's timetable to pre-populate attendance sheets for each class, reducing manual entry errors by 90%.",
+        "The system must support offline mode for teachers in areas with poor connectivity, syncing attendance data to the server within 10 seconds of reconnection.",
+        "Attendance data must be backed up to a secondary server every 5 minutes to prevent data loss during unexpected outages.",
+        "The mobile app for parents must load attendance notifications within 2 seconds on devices with 2GB RAM or higher.",
+        "The system must comply with FERPA regulations, ensuring student attendance data is encrypted at rest and in transit with AES-256 encryption.",
+        "The attendance dashboard for principals must render with a maximum latency of 3 seconds, even when querying data for 10,000+ students across 200+ classes."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather detailed requirements and create SRS document"
+          },
+          {
+            "id": "T2",
+            "name": "Define system architecture and high-level design"
+          },
+          {
+            "id": "T3",
+            "name": "Design database schema for attendance, users, and timetables"
+          },
+          {
+            "id": "T4",
+            "name": "Design API endpoints for attendance, reports, and notifications"
+          },
+          {
+            "id": "T5",
+            "name": "Design UI/UX for teacher, student, parent, and admin portals"
+          },
+          {
+            "id": "T6",
+            "name": "Set up development environment and CI/CD pipeline"
+          },
+          {
+            "id": "T7",
+            "name": "Implement biometric fingerprint integration with 3-second latency"
+          },
+          {
+            "id": "T8",
+            "name": "Implement real-time attendance recording and validation"
+          },
+          {
+            "id": "T9",
+            "name": "Implement daily attendance report generation and scheduling"
+          },
+          {
+            "id": "T10",
+            "name": "Implement instant push notification system for parents"
+          },
+          {
+            "id": "T11",
+            "name": "Implement student attendance history portal with filtering"
+          },
+          {
+            "id": "T12",
+            "name": "Implement grace period logic and late flagging in teacher UI"
+          },
+          {
+            "id": "T13",
+            "name": "Implement admin configurable attendance thresholds and alerts"
+          },
+          {
+            "id": "T14",
+            "name": "Implement teacher override and document attachment feature"
+          },
+          {
+            "id": "T15",
+            "name": "Integrate with school timetable system and pre-populate attendance sheets"
+          },
+          {
+            "id": "T16",
+            "name": "Implement offline mode with 10-second sync on reconnection"
+          },
+          {
+            "id": "T17",
+            "name": "Set up secondary server backup every 5 minutes"
+          },
+          {
+            "id": "T18",
+            "name": "Optimize mobile app for 2-second load time on 2GB RAM devices"
+          },
+          {
+            "id": "T19",
+            "name": "Implement AES-256 encryption for data at rest and in transit"
+          },
+          {
+            "id": "T20",
+            "name": "Optimize principal dashboard for 3-second max latency with large datasets"
+          },
+          {
+            "id": "T21",
+            "name": "Unit test all modules and integration points"
+          },
+          {
+            "id": "T22",
+            "name": "Perform system integration testing with biometric devices and timetable sync"
+          },
+          {
+            "id": "T23",
+            "name": "Conduct performance and load testing (10,000+ students, 200+ classes)"
+          },
+          {
+            "id": "T24",
+            "name": "Perform security testing and FERPA compliance audit"
+          },
+          {
+            "id": "T25",
+            "name": "Conduct user acceptance testing (UAT) with teachers, parents, admins"
+          },
+          {
+            "id": "T26",
+            "name": "Deploy to staging environment and finalize documentation"
+          },
+          {
+            "id": "T27",
+            "name": "Deploy to production with phased rollout plan"
+          },
+          {
+            "id": "T28",
+            "name": "Monitor post-deployment performance and user feedback"
+          },
+          {
+            "id": "T29",
+            "name": "Provide training and support for end-users"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T7"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T9"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T3",
+            "to": "T13"
+          },
+          {
+            "from": "T3",
+            "to": "T14"
+          },
+          {
+            "from": "T3",
+            "to": "T15"
+          },
+          {
+            "from": "T3",
+            "to": "T16"
+          },
+          {
+            "from": "T3",
+            "to": "T17"
+          },
+          {
+            "from": "T3",
+            "to": "T19"
+          },
+          {
+            "from": "T3",
+            "to": "T20"
+          },
+          {
+            "from": "T4",
+            "to": "T7"
+          },
+          {
+            "from": "T4",
+            "to": "T8"
+          },
+          {
+            "from": "T4",
+            "to": "T9"
+          },
+          {
+            "from": "T4",
+            "to": "T10"
+          },
+          {
+            "from": "T4",
+            "to": "T11"
+          },
+          {
+            "from": "T4",
+            "to": "T13"
+          },
+          {
+            "from": "T4",
+            "to": "T14"
+          },
+          {
+            "from": "T4",
+            "to": "T15"
+          },
+          {
+            "from": "T4",
+            "to": "T16"
+          },
+          {
+            "from": "T4",
+            "to": "T19"
+          },
+          {
+            "from": "T4",
+            "to": "T20"
+          },
+          {
+            "from": "T5",
+            "to": "T10"
+          },
+          {
+            "from": "T5",
+            "to": "T11"
+          },
+          {
+            "from": "T5",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T14"
+          },
+          {
+            "from": "T5",
+            "to": "T18"
+          },
+          {
+            "from": "T5",
+            "to": "T20"
+          },
+          {
+            "from": "T6",
+            "to": "T17"
+          },
+          {
+            "from": "T7",
+            "to": "T8"
+          },
+          {
+            "from": "T7",
+            "to": "T16"
+          },
+          {
+            "from": "T7",
+            "to": "T21"
+          },
+          {
+            "from": "T7",
+            "to": "T22"
+          },
+          {
+            "from": "T8",
+            "to": "T12"
+          },
+          {
+            "from": "T8",
+            "to": "T15"
+          },
+          {
+            "from": "T8",
+            "to": "T21"
+          },
+          {
+            "from": "T9",
+            "to": "T21"
+          },
+          {
+            "from": "T10",
+            "to": "T18"
+          },
+          {
+            "from": "T10",
+            "to": "T21"
+          },
+          {
+            "from": "T11",
+            "to": "T21"
+          },
+          {
+            "from": "T12",
+            "to": "T21"
+          },
+          {
+            "from": "T13",
+            "to": "T21"
+          },
+          {
+            "from": "T14",
+            "to": "T21"
+          },
+          {
+            "from": "T15",
+            "to": "T21"
+          },
+          {
+            "from": "T15",
+            "to": "T22"
+          },
+          {
+            "from": "T16",
+            "to": "T21"
+          },
+          {
+            "from": "T18",
+            "to": "T21"
+          },
+          {
+            "from": "T19",
+            "to": "T21"
+          },
+          {
+            "from": "T19",
+            "to": "T24"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T20",
+            "to": "T23"
+          },
+          {
+            "from": "T21",
+            "to": "T22"
+          },
+          {
+            "from": "T22",
+            "to": "T23"
+          },
+          {
+            "from": "T23",
+            "to": "T24"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          },
+          {
+            "from": "T25",
+            "to": "T26"
+          },
+          {
+            "from": "T26",
+            "to": "T27"
+          },
+          {
+            "from": "T27",
+            "to": "T28"
+          },
+          {
+            "from": "T27",
+            "to": "T29"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Gather detailed requirements and create SRS document",
+          "risk": "Incomplete or ambiguous requirements leading to scope creep or rework.",
+          "severity": "High",
+          "mitigation": "Conduct structured requirement workshops with stakeholders and validate with prototypes."
+        },
+        {
+          "stage": "Define system architecture and high-level design",
+          "risk": "Poor scalability or performance bottlenecks due to flawed architectural decisions.",
+          "severity": "High",
+          "mitigation": "Engage experienced architects and conduct peer reviews against performance benchmarks."
+        },
+        {
+          "stage": "Design database schema for attendance, users, and timetables",
+          "risk": "Inefficient schema causing slow query performance during peak loads.",
+          "severity": "High",
+          "mitigation": "Normalize schema for data integrity but denormalize for read-heavy operations and index strategically."
+        },
+        {
+          "stage": "Design API endpoints for attendance, reports, and notifications",
+          "risk": "API design flaws leading to excessive data transfer or security vulnerabilities.",
+          "severity": "Medium",
+          "mitigation": "Follow RESTful principles, implement pagination, and enforce strict input validation."
+        },
+        {
+          "stage": "Design UI/UX for teacher, student, parent, and admin portals",
+          "risk": "Poor usability causing user adoption issues or increased support burden.",
+          "severity": "Medium",
+          "mitigation": "Conduct iterative usability testing with target users and follow accessibility guidelines."
+        },
+        {
+          "stage": "Set up development environment and CI/CD pipeline",
+          "risk": "Inconsistent environments causing deployment failures or integration issues.",
+          "severity": "Medium",
+          "mitigation": "Use infrastructure-as-code and containerization to ensure reproducibility."
+        },
+        {
+          "stage": "Implement biometric fingerprint integration with 3-second latency",
+          "risk": "Biometric hardware incompatibility or slow response times degrading user experience.",
+          "severity": "High",
+          "mitigation": "Test with multiple biometric devices early and optimize SDK performance."
+        },
+        {
+          "stage": "Implement real-time attendance recording and validation",
+          "risk": "Data inconsistency or race conditions during concurrent attendance submissions.",
+          "severity": "High",
+          "mitigation": "Use distributed locks or transactional outbox patterns to ensure consistency."
+        },
+        {
+          "stage": "Implement daily attendance report generation and scheduling",
+          "risk": "Report generation delays or failures during high-volume periods.",
+          "severity": "Medium",
+          "mitigation": "Schedule reports during off-peak hours and implement async processing with retries."
+        },
+        {
+          "stage": "Implement instant push notification system for parents",
+          "risk": "Notification delivery failures or delays due to third-party service limitations.",
+          "severity": "Medium",
+          "mitigation": "Implement fallback channels (SMS/email) and monitor delivery metrics closely."
+        },
+        {
+          "stage": "Implement student attendance history portal with filtering",
+          "risk": "Slow query performance when filtering large historical datasets.",
+          "severity": "Medium",
+          "mitigation": "Implement database indexing, caching, and client-side pagination."
+        },
+        {
+          "stage": "Implement grace period logic and late flagging in teacher UI",
+          "risk": "Incorrect grace period calculations leading to unfair attendance marking.",
+          "severity": "High",
+          "mitigation": "Validate logic with school policies and conduct unit tests for edge cases."
+        },
+        {
+          "stage": "Implement admin configurable attendance thresholds and alerts",
+          "risk": "Misconfigured thresholds causing false positives or missed critical alerts.",
+          "severity": "High",
+          "mitigation": "Provide clear documentation and validation rules for admin settings."
+        },
+        {
+          "stage": "Implement teacher override and document attachment feature",
+          "risk": "Unauthorized overrides or document tampering compromising data integrity.",
+          "severity": "High",
+          "mitigation": "Implement audit logs, role-based access control, and document versioning."
+        },
+        {
+          "stage": "Integrate with school timetable system and pre-populate attendance sheets",
+          "risk": "Timetable sync failures leading to incorrect attendance pre-population.",
+          "severity": "High",
+          "mitigation": "Implement sync validation checks and fallback to manual entry if sync fails."
+        },
+        {
+          "stage": "Implement offline mode with 10-second sync on reconnection",
+          "risk": "Data loss or corruption during offline operations or sync conflicts.",
+          "severity": "High",
+          "mitigation": "Use conflict-free replicated data types (CRDTs) and implement robust sync protocols."
+        },
+        {
+          "stage": "Set up secondary server backup every 5 minutes",
+          "risk": "Backup failures or corruption leading to data loss during catastrophic events.",
+          "severity": "High",
+          "mitigation": "Automate backup verification and implement geographically distributed backups."
+        },
+        {
+          "stage": "Optimize mobile app for 2-second load time on 2GB RAM devices",
+          "risk": "Poor app performance on low-end devices causing user abandonment.",
+          "severity": "Medium",
+          "mitigation": "Profile app performance early and optimize memory usage and network calls."
+        },
+        {
+          "stage": "Implement AES-256 encryption for data at rest and in transit",
+          "risk": "Implementation flaws or key management issues compromising data security.",
+          "severity": "High",
+          "mitigation": "Use established libraries/frameworks and conduct third-party security audits."
+        },
+        {
+          "stage": "Optimize principal dashboard for 3-second max latency with large datasets",
+          "risk": "Dashboard queries timing out or freezing during peak usage.",
+          "severity": "Medium",
+          "mitigation": "Implement server-side pagination, caching, and query optimization techniques."
+        },
+        {
+          "stage": "Unit test all modules and integration points",
+          "risk": "Incomplete test coverage leading to undetected bugs in production.",
+          "severity": "Medium",
+          "mitigation": "Enforce code coverage thresholds and conduct peer reviews of test cases."
+        },
+        {
+          "stage": "Perform system integration testing with biometric devices and timetable sync",
+          "risk": "Integration failures due to hardware or API changes in third-party systems.",
+          "severity": "High",
+          "mitigation": "Test with production-like hardware and maintain version compatibility matrices."
+        },
+        {
+          "stage": "Conduct performance and load testing (10,000+ students, 200+ classes)",
+          "risk": "Undetected performance bottlenecks causing system failure under real-world loads.",
+          "severity": "High",
+          "mitigation": "Simulate realistic load patterns and monitor key metrics under stress."
+        },
+        {
+          "stage": "Perform security testing and FERPA compliance audit",
+          "risk": "Security vulnerabilities or compliance gaps leading to legal penalties or data breaches.",
+          "severity": "High",
+          "mitigation": "Engage third-party security experts and conduct regular penetration testing."
+        },
+        {
+          "stage": "Conduct user acceptance testing (UAT) with teachers, parents, admins",
+          "risk": "Misaligned expectations or usability issues causing rejection of the system.",
+          "severity": "Medium",
+          "mitigation": "Involve end-users early in the design process and gather feedback iteratively."
+        },
+        {
+          "stage": "Deploy to staging environment and finalize documentation",
+          "risk": "Staging environment inconsistencies leading to deployment surprises in production.",
+          "severity": "Medium",
+          "mitigation": "Ensure staging mirrors production exactly and validate all configurations."
+        },
+        {
+          "stage": "Deploy to production with phased rollout plan",
+          "risk": "Unforeseen issues in production causing widespread disruptions.",
+          "severity": "High",
+          "mitigation": "Use feature flags, canary releases, and rollback procedures."
+        },
+        {
+          "stage": "Monitor post-deployment performance and user feedback",
+          "risk": "Undetected issues escalating due to lack of proactive monitoring.",
+          "severity": "Medium",
+          "mitigation": "Implement comprehensive logging, alerting, and user feedback channels."
+        },
+        {
+          "stage": "Provide training and support for end-users",
+          "risk": "Inadequate training leading to low adoption or misuse of the system.",
+          "severity": "Medium",
+          "mitigation": "Develop role-specific training materials and provide ongoing support channels."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.857,
+        "risk_coverage": 1.0,
+        "validation_score": 97.14
+      },
+      "response_time_seconds": 24.678
+    }
+  },
+  "scores": {
+    "gemini": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 90.61512278142474,
+      "overall_score": 65.81
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 85.89026663424913,
+      "overall_score": 65.34
+    },
+    "llama": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 71.39999999999999,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 65.87648918064673,
+      "overall_score": 90.87
+    },
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 96.03695599319232,
+      "overall_score": 66.35
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 85.7,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 87.14
+    }
+  },
+  "best_model": "llama"
+}

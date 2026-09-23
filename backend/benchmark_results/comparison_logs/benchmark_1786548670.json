@@ -1,0 +1,974 @@
+{
+  "timestamp": 1786548670,
+  "project_description": "student management system",
+  "results": {
+    "gemini": {
+      "model_key": "gemini",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 3.602
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 7.102
+    },
+    "llama": {
+      "model_key": "llama",
+      "success": true,
+      "requirements": [
+        "The Admin can add, edit, and remove student information, including name, date of birth, and contact details, from the student database.",
+        "Teachers can assign grades to students for specific assignments and exams, which are then stored in the student's transcript.",
+        "Students can view their own grades and transcripts online, with the ability to filter by course and semester.",
+        "The system allows Parents to receive automated email notifications when their child's grades are updated or when assignments are due.",
+        "Teachers can generate attendance reports for their classes, showing which students were present or absent on a given day.",
+        "The system enables Admins to create and manage student schedules, including class assignments and room numbers.",
+        "Students can use the system to register for courses and sections for upcoming semesters, with the ability to select preferred instructors and class times.",
+        "The system allows Teachers to post announcements and assignments for their classes, which are then visible to students and parents.",
+        "The system must be able to handle a minimum of 10,000 concurrent student logins during peak registration periods without a decrease in performance.",
+        "All student data must be backed up nightly, with backups stored offsite for disaster recovery purposes, to ensure business continuity in the event of a system failure.",
+        "The system must comply with FERPA regulations regarding student data privacy and security, including encryption of sensitive data both in transit and at rest.",
+        "The system's user interface must be accessible on a variety of devices, including desktops, laptops, tablets, and smartphones, to accommodate different user preferences and needs.",
+        "The system must be able to integrate with existing student information systems, such as library and cafeteria management systems, to provide a seamless user experience."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather Requirements"
+          },
+          {
+            "id": "T2",
+            "name": "Design Database Schema"
+          },
+          {
+            "id": "T3",
+            "name": "Design User Interface"
+          },
+          {
+            "id": "T4",
+            "name": "Design System Architecture"
+          },
+          {
+            "id": "T5",
+            "name": "Create Prototype"
+          },
+          {
+            "id": "T6",
+            "name": "Develop Student Information Management"
+          },
+          {
+            "id": "T7",
+            "name": "Develop Grade Management"
+          },
+          {
+            "id": "T8",
+            "name": "Develop Attendance Reporting"
+          },
+          {
+            "id": "T9",
+            "name": "Develop Scheduling Management"
+          },
+          {
+            "id": "T10",
+            "name": "Develop Course Registration"
+          },
+          {
+            "id": "T11",
+            "name": "Develop Announcement and Assignment Posting"
+          },
+          {
+            "id": "T12",
+            "name": "Develop Automated Email Notifications"
+          },
+          {
+            "id": "T13",
+            "name": "Develop Data Backup and Recovery"
+          },
+          {
+            "id": "T14",
+            "name": "Develop Security and Encryption"
+          },
+          {
+            "id": "T15",
+            "name": "Develop User Interface for Various Devices"
+          },
+          {
+            "id": "T16",
+            "name": "Integrate with Existing Systems"
+          },
+          {
+            "id": "T17",
+            "name": "Unit Testing"
+          },
+          {
+            "id": "T18",
+            "name": "Integration Testing"
+          },
+          {
+            "id": "T19",
+            "name": "System Testing"
+          },
+          {
+            "id": "T20",
+            "name": "Performance Testing"
+          },
+          {
+            "id": "T21",
+            "name": "Deploy to Production"
+          },
+          {
+            "id": "T22",
+            "name": "Monitor and Maintain"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T1",
+            "to": "T3"
+          },
+          {
+            "from": "T1",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T3",
+            "to": "T5"
+          },
+          {
+            "from": "T4",
+            "to": "T5"
+          },
+          {
+            "from": "T5",
+            "to": "T6"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T8"
+          },
+          {
+            "from": "T5",
+            "to": "T9"
+          },
+          {
+            "from": "T5",
+            "to": "T10"
+          },
+          {
+            "from": "T5",
+            "to": "T11"
+          },
+          {
+            "from": "T5",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T13"
+          },
+          {
+            "from": "T5",
+            "to": "T14"
+          },
+          {
+            "from": "T5",
+            "to": "T15"
+          },
+          {
+            "from": "T5",
+            "to": "T16"
+          },
+          {
+            "from": "T6",
+            "to": "T17"
+          },
+          {
+            "from": "T7",
+            "to": "T17"
+          },
+          {
+            "from": "T8",
+            "to": "T17"
+          },
+          {
+            "from": "T9",
+            "to": "T17"
+          },
+          {
+            "from": "T10",
+            "to": "T17"
+          },
+          {
+            "from": "T11",
+            "to": "T17"
+          },
+          {
+            "from": "T12",
+            "to": "T17"
+          },
+          {
+            "from": "T13",
+            "to": "T17"
+          },
+          {
+            "from": "T14",
+            "to": "T17"
+          },
+          {
+            "from": "T15",
+            "to": "T17"
+          },
+          {
+            "from": "T16",
+            "to": "T17"
+          },
+          {
+            "from": "T17",
+            "to": "T18"
+          },
+          {
+            "from": "T18",
+            "to": "T19"
+          },
+          {
+            "from": "T19",
+            "to": "T20"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T21",
+            "to": "T22"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Gather Requirements",
+          "risk": "Inaccurate or incomplete requirements may lead to project delays and scope creep.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder interviews and reviews to validate requirements."
+        },
+        {
+          "stage": "Design Database Schema",
+          "risk": "Inadequate database design may result in poor data integrity and scalability issues.",
+          "severity": "Medium",
+          "mitigation": "Engage experienced database architects to review and refine the schema."
+        },
+        {
+          "stage": "Design User Interface",
+          "risk": "A poorly designed user interface may lead to low user adoption and satisfaction.",
+          "severity": "Medium",
+          "mitigation": "Conduct user experience (UX) research and testing to inform design decisions."
+        },
+        {
+          "stage": "Design System Architecture",
+          "risk": "Inadequate system architecture may lead to performance, security, and scalability issues.",
+          "severity": "High",
+          "mitigation": "Employ experienced architects to design and review the system architecture."
+        },
+        {
+          "stage": "Create Prototype",
+          "risk": "Insufficient prototyping may lead to misunderstandings of the final product's functionality.",
+          "severity": "Low",
+          "mitigation": "Develop a functional prototype to demonstrate key features and gather feedback."
+        },
+        {
+          "stage": "Develop Student Information Management",
+          "risk": "Data inconsistencies or inaccuracies may compromise student information management.",
+          "severity": "Medium",
+          "mitigation": "Implement data validation and verification processes to ensure data accuracy."
+        },
+        {
+          "stage": "Develop Grade Management",
+          "risk": "Grade calculation errors or inconsistencies may lead to disputes and reputational damage.",
+          "severity": "High",
+          "mitigation": "Thoroughly test and validate grade calculation logic to ensure accuracy."
+        },
+        {
+          "stage": "Develop Attendance Reporting",
+          "risk": "Inaccurate or incomplete attendance data may lead to incorrect reporting and decision-making.",
+          "severity": "Medium",
+          "mitigation": "Implement automated attendance tracking and reporting mechanisms."
+        },
+        {
+          "stage": "Develop Scheduling Management",
+          "risk": "Scheduling conflicts or errors may lead to logistical issues and user dissatisfaction.",
+          "severity": "Medium",
+          "mitigation": "Implement robust scheduling algorithms and conflict resolution mechanisms."
+        },
+        {
+          "stage": "Develop Course Registration",
+          "risk": "Course registration errors or inconsistencies may lead to student frustration and administrative burdens.",
+          "severity": "Medium",
+          "mitigation": "Implement automated course registration and validation processes."
+        },
+        {
+          "stage": "Develop Announcement and Assignment Posting",
+          "risk": "Inaccurate or untimely announcements and assignments may lead to student confusion and dissatisfaction.",
+          "severity": "Low",
+          "mitigation": "Implement a content management system to streamline announcement and assignment posting."
+        },
+        {
+          "stage": "Develop Automated Email Notifications",
+          "risk": "Email notification errors or spam filtering may lead to missed communications and user frustration.",
+          "severity": "Low",
+          "mitigation": "Implement email notification testing and validation to ensure deliverability."
+        },
+        {
+          "stage": "Develop Data Backup and Recovery",
+          "risk": "Insufficient data backup and recovery mechanisms may lead to data loss and system downtime.",
+          "severity": "High",
+          "mitigation": "Implement regular automated backups and disaster recovery procedures."
+        },
+        {
+          "stage": "Develop Security and Encryption",
+          "risk": "Inadequate security and encryption measures may lead to data breaches and reputational damage.",
+          "severity": "High",
+          "mitigation": "Employ experienced security experts to design and implement robust security measures."
+        },
+        {
+          "stage": "Develop User Interface for Various Devices",
+          "risk": "Inconsistent or poorly optimized user interfaces may lead to low user adoption and satisfaction.",
+          "severity": "Medium",
+          "mitigation": "Conduct device-specific testing and optimization to ensure a consistent user experience."
+        },
+        {
+          "stage": "Integrate with Existing Systems",
+          "risk": "Integration issues or incompatibilities may lead to system downtime and data inconsistencies.",
+          "severity": "High",
+          "mitigation": "Engage experienced integration specialists to design and test integration interfaces."
+        },
+        {
+          "stage": "Unit Testing",
+          "risk": "Inadequate unit testing may lead to undetected bugs and defects in the codebase.",
+          "severity": "Medium",
+          "mitigation": "Implement comprehensive unit testing and code review processes."
+        },
+        {
+          "stage": "Integration Testing",
+          "risk": "Inadequate integration testing may lead to undetected integration issues and system failures.",
+          "severity": "High",
+          "mitigation": "Conduct thorough integration testing to validate system interactions and interfaces."
+        },
+        {
+          "stage": "System Testing",
+          "risk": "Inadequate system testing may lead to undetected system-level issues and defects.",
+          "severity": "High",
+          "mitigation": "Conduct comprehensive system testing to validate overall system functionality and performance."
+        },
+        {
+          "stage": "Performance Testing",
+          "risk": "Inadequate performance testing may lead to poor system performance and scalability issues.",
+          "severity": "Medium",
+          "mitigation": "Conduct thorough performance testing to validate system performance and scalability."
+        },
+        {
+          "stage": "Deploy to Production",
+          "risk": "Deployment errors or issues may lead to system downtime and reputational damage.",
+          "severity": "High",
+          "mitigation": "Develop a comprehensive deployment plan and conduct thorough testing before deployment."
+        },
+        {
+          "stage": "Monitor and Maintain",
+          "risk": "Inadequate monitoring and maintenance may lead to system degradation and security vulnerabilities.",
+          "severity": "Medium",
+          "mitigation": "Implement ongoing monitoring and maintenance processes to ensure system health and security."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.571,
+        "risk_coverage": 1.0,
+        "validation_score": 91.43
+      },
+      "response_time_seconds": 8.69
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "food logging must be available offline and sync when online",
+        "food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 1.276
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Teachers can submit final grades for students via a weighted rubric interface where each assignment category (e.g., exams, quizzes, projects) contributes a pre-configured percentage to the final grade.",
+        "Students can view their academic progress through a dashboard that displays GPA trends, completed credits, and upcoming course deadlines with color-coded urgency indicators.",
+        "Parents can receive automated weekly progress reports via email, summarizing their child's attendance, grades, and teacher feedback without requiring manual requests.",
+        "The Registrar can generate degree audit reports that highlight missing requirements for graduation by cross-referencing student transcripts with the official curriculum checklist.",
+        "Counselors can flag students for academic intervention by attaching a risk assessment score (e.g., low attendance, failing grades) that triggers an automated alert to the student\u2019s advisor.",
+        "Students can submit graduation petitions online, which are routed to the Registrar for approval and automatically update their academic status in the system.",
+        "Teachers can upload assignment rubrics in PDF format that are embedded directly into the student portal for transparency in grading criteria.",
+        "The system must enforce course prerequisites by preventing students from enrolling in advanced courses unless they have completed the required prior courses with a minimum grade threshold.",
+        "The system must support concurrent access by up to 5,000 users during peak enrollment periods without degrading response time below 2 seconds for grade submission queries.",
+        "All student data must be encrypted at rest using AES-256 and in transit via TLS 1.3 to comply with FERPA regulations for educational records.",
+        "The grade submission interface must be accessible via screen readers and keyboard navigation to accommodate users with disabilities, adhering to WCAG 2.1 AA standards.",
+        "The system must retain academic records for a minimum of 5 years after a student\u2019s last enrollment, with automated archival to cold storage after 3 years of inactivity.",
+        "The final grade submission workflow must include a 30-second auto-save feature to prevent data loss in case of network interruptions during high-traffic periods."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Requirements Finalization and FERPA Compliance Review"
+          },
+          {
+            "id": "T2",
+            "name": "System Architecture Design and Scalability Planning"
+          },
+          {
+            "id": "T3",
+            "name": "Database Schema Design and Encryption Strategy"
+          },
+          {
+            "id": "T4",
+            "name": "User Interface and Accessibility Design (WCAG 2.1 AA)"
+          },
+          {
+            "id": "T5",
+            "name": "API and Integration Design for Third-Party Systems"
+          },
+          {
+            "id": "T6",
+            "name": "Security and Compliance Framework Implementation"
+          },
+          {
+            "id": "T7",
+            "name": "Backend Services Development (Grade Submission, Rubric Upload, etc.)"
+          },
+          {
+            "id": "T8",
+            "name": "Frontend Development (Dashboard, Portal, Accessibility Features)"
+          },
+          {
+            "id": "T9",
+            "name": "Automated Email and Notification System (Weekly Reports, Alerts)"
+          },
+          {
+            "id": "T10",
+            "name": "Degree Audit and Prerequisite Enforcement Logic"
+          },
+          {
+            "id": "T11",
+            "name": "Data Archival and Retention Policy Implementation"
+          },
+          {
+            "id": "T12",
+            "name": "Load Testing and Performance Optimization for 5,000 Concurrent Users"
+          },
+          {
+            "id": "T13",
+            "name": "Unit and Integration Testing for All Modules"
+          },
+          {
+            "id": "T14",
+            "name": "Accessibility and WCAG 2.1 AA Compliance Testing"
+          },
+          {
+            "id": "T15",
+            "name": "Security Penetration Testing and FERPA Audit"
+          },
+          {
+            "id": "T16",
+            "name": "User Acceptance Testing (UAT) with Stakeholders"
+          },
+          {
+            "id": "T17",
+            "name": "Production Environment Setup and Deployment Pipeline"
+          },
+          {
+            "id": "T18",
+            "name": "Gradual Rollout and Monitoring for Grade Submission Workflow"
+          },
+          {
+            "id": "T19",
+            "name": "Final Documentation and Training for All User Roles"
+          },
+          {
+            "id": "T20",
+            "name": "Post-Deployment Support and Performance Tuning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T3",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T7"
+          },
+          {
+            "from": "T3",
+            "to": "T10"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T4",
+            "to": "T8"
+          },
+          {
+            "from": "T5",
+            "to": "T7"
+          },
+          {
+            "from": "T5",
+            "to": "T9"
+          },
+          {
+            "from": "T5",
+            "to": "T10"
+          },
+          {
+            "from": "T6",
+            "to": "T7"
+          },
+          {
+            "from": "T6",
+            "to": "T15"
+          },
+          {
+            "from": "T7",
+            "to": "T8"
+          },
+          {
+            "from": "T7",
+            "to": "T9"
+          },
+          {
+            "from": "T7",
+            "to": "T12"
+          },
+          {
+            "from": "T7",
+            "to": "T13"
+          },
+          {
+            "from": "T8",
+            "to": "T12"
+          },
+          {
+            "from": "T8",
+            "to": "T13"
+          },
+          {
+            "from": "T8",
+            "to": "T14"
+          },
+          {
+            "from": "T9",
+            "to": "T13"
+          },
+          {
+            "from": "T10",
+            "to": "T13"
+          },
+          {
+            "from": "T11",
+            "to": "T13"
+          },
+          {
+            "from": "T12",
+            "to": "T17"
+          },
+          {
+            "from": "T13",
+            "to": "T14"
+          },
+          {
+            "from": "T13",
+            "to": "T15"
+          },
+          {
+            "from": "T13",
+            "to": "T16"
+          },
+          {
+            "from": "T14",
+            "to": "T16"
+          },
+          {
+            "from": "T15",
+            "to": "T16"
+          },
+          {
+            "from": "T15",
+            "to": "T17"
+          },
+          {
+            "from": "T16",
+            "to": "T18"
+          },
+          {
+            "from": "T17",
+            "to": "T18"
+          },
+          {
+            "from": "T18",
+            "to": "T19"
+          },
+          {
+            "from": "T19",
+            "to": "T20"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Requirements Finalization and FERPA Compliance Review",
+          "risk": "Incomplete or ambiguous requirements may lead to compliance gaps or scope creep.",
+          "severity": "High",
+          "mitigation": "Conduct thorough stakeholder reviews and formalize requirements with clear FERPA compliance checkpoints."
+        },
+        {
+          "stage": "System Architecture Design and Scalability Planning",
+          "risk": "Poor scalability design may cause performance bottlenecks under high user loads.",
+          "severity": "High",
+          "mitigation": "Implement modular architecture with horizontal scaling capabilities and load testing early."
+        },
+        {
+          "stage": "Database Schema Design and Encryption Strategy",
+          "risk": "Inefficient schema or weak encryption may lead to data breaches or performance issues.",
+          "severity": "High",
+          "mitigation": "Use normalized schema with encryption at rest and in transit, validated by security reviews."
+        },
+        {
+          "stage": "User Interface and Accessibility Design (WCAG 2.1 AA)",
+          "risk": "Non-compliance with WCAG 2.1 AA may result in legal issues or exclusion of disabled users.",
+          "severity": "High",
+          "mitigation": "Engage accessibility experts early and conduct iterative testing with assistive technologies."
+        },
+        {
+          "stage": "API and Integration Design for Third-Party Systems",
+          "risk": "Poorly designed APIs may cause integration failures or security vulnerabilities.",
+          "severity": "Medium",
+          "mitigation": "Adopt RESTful standards with strict input validation and OAuth 2.0 for third-party access."
+        },
+        {
+          "stage": "Security and Compliance Framework Implementation",
+          "risk": "Inadequate security controls may expose sensitive student data to breaches.",
+          "severity": "High",
+          "mitigation": "Implement defense-in-depth with regular audits and automated compliance checks."
+        },
+        {
+          "stage": "Backend Services Development (Grade Submission, Rubric Upload, etc.)",
+          "risk": "Bugs in critical workflows may corrupt or mishandle grade data.",
+          "severity": "High",
+          "mitigation": "Use TDD and peer reviews for core services with automated regression testing."
+        },
+        {
+          "stage": "Frontend Development (Dashboard, Portal, Accessibility Features)",
+          "risk": "Frontend bugs may break accessibility or user workflows, reducing adoption.",
+          "severity": "Medium",
+          "mitigation": "Adopt component-based frameworks with automated accessibility and unit tests."
+        },
+        {
+          "stage": "Automated Email and Notification System (Weekly Reports, Alerts)",
+          "risk": "Failed or delayed notifications may lead to missed deadlines or compliance violations.",
+          "severity": "Medium",
+          "mitigation": "Implement retry logic, monitoring, and fallback mechanisms for email services."
+        },
+        {
+          "stage": "Degree Audit and Prerequisite Enforcement Logic",
+          "risk": "Incorrect audit logic may allow invalid degree progressions, violating academic policies.",
+          "severity": "High",
+          "mitigation": "Validate logic with academic stakeholders and use formal verification for critical paths."
+        },
+        {
+          "stage": "Data Archival and Retention Policy Implementation",
+          "risk": "Non-compliance with retention policies may result in legal penalties or data leaks.",
+          "severity": "High",
+          "mitigation": "Automate archival with encryption and enforce policy via database triggers and audits."
+        },
+        {
+          "stage": "Load Testing and Performance Optimization for 5,000 Concurrent Users",
+          "risk": "Undiscovered performance issues may crash the system during peak usage.",
+          "severity": "High",
+          "mitigation": "Conduct load testing early with realistic data and optimize bottlenecks iteratively."
+        },
+        {
+          "stage": "Unit and Integration Testing for All Modules",
+          "risk": "Insufficient test coverage may allow defects to reach production unnoticed.",
+          "severity": "Medium",
+          "mitigation": "Enforce 80%+ coverage with CI/CD pipelines and automated test reporting."
+        },
+        {
+          "stage": "Accessibility and WCAG 2.1 AA Compliance Testing",
+          "risk": "Late discovery of accessibility issues may require costly rework.",
+          "severity": "Medium",
+          "mitigation": "Integrate accessibility testing into the CI pipeline and use automated tools alongside manual reviews."
+        },
+        {
+          "stage": "Security Penetration Testing and FERPA Audit",
+          "risk": "Undetected vulnerabilities may lead to data breaches or regulatory fines.",
+          "severity": "High",
+          "mitigation": "Engage third-party security firms and conduct FERPA-specific audits before deployment."
+        },
+        {
+          "stage": "User Acceptance Testing (UAT) with Stakeholders",
+          "risk": "Misaligned expectations may result in rejection of the system post-deployment.",
+          "severity": "Medium",
+          "mitigation": "Involve end-users early in iterative prototypes and define clear UAT acceptance criteria."
+        },
+        {
+          "stage": "Production Environment Setup and Deployment Pipeline",
+          "risk": "Configuration errors may cause downtime or data loss during deployment.",
+          "severity": "High",
+          "mitigation": "Use infrastructure-as-code and blue-green deployments with rollback capabilities."
+        },
+        {
+          "stage": "Gradual Rollout and Monitoring for Grade Submission Workflow",
+          "risk": "Uncontrolled rollout may expose critical workflows to untested edge cases.",
+          "severity": "High",
+          "mitigation": "Deploy to a small cohort first with real-time monitoring and rapid incident response."
+        },
+        {
+          "stage": "Final Documentation and Training for All User Roles",
+          "risk": "Inadequate training may lead to user errors or low adoption rates.",
+          "severity": "Medium",
+          "mitigation": "Develop role-specific guides and conduct live training sessions with feedback loops."
+        },
+        {
+          "stage": "Post-Deployment Support and Performance Tuning",
+          "risk": "Unresolved performance issues may degrade user trust and system reliability.",
+          "severity": "Medium",
+          "mitigation": "Establish a dedicated support team and monitor key performance metrics continuously."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 1.0,
+        "risk_coverage": 1.0,
+        "validation_score": 100.0
+      },
+      "response_time_seconds": 20.841
+    }
+  },
+  "scores": {
+    "gemini": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 82.71676023223455,
+      "overall_score": 65.02
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 65.92294035794828,
+      "overall_score": 63.34
+    },
+    "llama": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 57.099999999999994,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 58.30334436927211,
+      "overall_score": 87.25
+    },
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 93.87745309726022,
+      "overall_score": 66.14
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 100.0,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 90.0
+    }
+  },
+  "best_model": "mistral"
+}

@@ -1,0 +1,829 @@
+{
+  "timestamp": 1788108697,
+  "project_description": "student attendance management system",
+  "results": {
+    "llama": {
+      "model_key": "llama",
+      "success": false,
+      "error": "[Errno 13] Permission denied: 'outputs\\\\architecture_diagrams\\\\workflow_architecture'",
+      "response_time_seconds": 0.472
+    },
+    "gemini": {
+      "model_key": "gemini",
+      "success": false,
+      "error": "[Errno 13] Permission denied: 'outputs\\\\architecture_diagrams\\\\workflow_architecture'",
+      "response_time_seconds": 0.884
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance for each class session",
+        "Students can view their attendance records and percentage for each course",
+        "Parents can receive alerts when a student is marked absent or late",
+        "Admins can generate daily and monthly attendance summaries by class",
+        "Teachers can search attendance by student, date, or subject",
+        "The system can flag students who fall below the attendance threshold",
+        "Managers can export class attendance reports as CSV or PDF",
+        "Teachers can edit or correct attendance entries after a class period",
+        "Attendance data must sync in real time across teacher and admin dashboards",
+        "The attendance workflow must remain available during class hours with minimal downtime",
+        "Student and attendance records must be protected with access controls for staff roles",
+        "The system must retain attendance history for the academic term and audit review",
+        "Attendance dashboards must remain readable on classroom tablets and laptops"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.956
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance for each class session",
+        "Students can view their attendance records and percentage for each course",
+        "Parents can receive alerts when a student is marked absent or late",
+        "Admins can generate daily and monthly attendance summaries by class",
+        "Teachers can search attendance by student, date, or subject",
+        "The system can flag students who fall below the attendance threshold",
+        "Managers can export class attendance reports as CSV or PDF",
+        "Teachers can edit or correct attendance entries after a class period",
+        "Attendance data must sync in real time across teacher and admin dashboards",
+        "The attendance workflow must remain available during class hours with minimal downtime",
+        "Student and attendance records must be protected with access controls for staff roles",
+        "The system must retain attendance history for the academic term and audit review",
+        "Attendance dashboards must remain readable on classroom tablets and laptops"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 3.151
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Teachers can mark student attendance via biometric fingerprint scan at the start of each class to ensure real-time and tamper-proof recording.",
+        "The system must automatically generate a daily attendance report for each class, including the number of present, absent, and late students, and send it to the class teacher via email by 4 PM.",
+        "Parents receive an instant push notification (via the school\u2019s mobile app) when their child is marked absent without prior notice, including the reason for absence if provided by the teacher.",
+        "Students can view their own attendance history for the current academic year through the student portal, including daily attendance status and percentage of attendance.",
+        "The system must allow the school administrator to configure attendance policies, such as the minimum required attendance percentage for exams eligibility (e.g., 75%), and enforce these rules during grade calculation.",
+        "Teachers can submit a request to the administrator to manually override a student\u2019s attendance record in case of a valid reason (e.g., medical leave), which must be approved before the change is reflected in reports.",
+        "The system must integrate with the school\u2019s timetable module to auto-populate attendance records based on scheduled classes, reducing manual entry errors.",
+        "Parents can submit a leave application through the parent portal, which is routed to the class teacher for approval; approved leaves are automatically reflected in the attendance records.",
+        "The system must flag students with attendance below the required threshold (e.g., 75%) and notify the class teacher and school counselor via dashboard alerts for follow-up actions.",
+        "Teachers can take a photo of the class during attendance marking to visually verify the presence of students, which is stored securely and linked to the attendance record for audit purposes.",
+        "The system must process and store attendance data with a latency of less than 2 seconds to ensure real-time updates during class sessions.",
+        "Attendance records must be retained for a minimum of 5 academic years and be accessible within 10 seconds for retrieval requests from authorized users.",
+        "The system must comply with GDPR and local education data protection laws, ensuring that student attendance data is encrypted at rest and in transit.",
+        "The mobile app for parents and students must support offline mode, syncing attendance data once connectivity is restored without data loss.",
+        "The system must handle a peak load of 500 concurrent users (teachers, students, parents) during attendance marking periods without performance degradation."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather detailed requirements and create functional specifications"
+          },
+          {
+            "id": "T2",
+            "name": "Design system architecture and high-level components"
+          },
+          {
+            "id": "T3",
+            "name": "Design database schema for attendance records and related entities"
+          },
+          {
+            "id": "T4",
+            "name": "Design API endpoints for attendance marking, reporting, and notifications"
+          },
+          {
+            "id": "T5",
+            "name": "Design user interfaces for teacher, student, parent, and admin portals"
+          },
+          {
+            "id": "T6",
+            "name": "Design mobile app architecture and offline sync strategy"
+          },
+          {
+            "id": "T7",
+            "name": "Implement biometric fingerprint integration module"
+          },
+          {
+            "id": "T8",
+            "name": "Implement backend services for attendance recording and processing"
+          },
+          {
+            "id": "T9",
+            "name": "Implement real-time attendance update and notification engine"
+          },
+          {
+            "id": "T10",
+            "name": "Implement daily attendance report generation and email dispatch"
+          },
+          {
+            "id": "T11",
+            "name": "Implement parent push notification system via school mobile app"
+          },
+          {
+            "id": "T12",
+            "name": "Implement student attendance history and percentage calculation"
+          },
+          {
+            "id": "T13",
+            "name": "Implement attendance policy configuration and enforcement module"
+          },
+          {
+            "id": "T14",
+            "name": "Implement attendance override request and approval workflow"
+          },
+          {
+            "id": "T15",
+            "name": "Integrate with school timetable module for auto-population"
+          },
+          {
+            "id": "T16",
+            "name": "Implement parent leave application and approval workflow"
+          },
+          {
+            "id": "T17",
+            "name": "Implement attendance threshold monitoring and dashboard alerts"
+          },
+          {
+            "id": "T18",
+            "name": "Implement photo capture and secure storage for attendance verification"
+          },
+          {
+            "id": "T19",
+            "name": "Develop mobile app frontend for parents and students with offline support"
+          },
+          {
+            "id": "T20",
+            "name": "Develop web portal frontend for teachers, students, and administrators"
+          },
+          {
+            "id": "T21",
+            "name": "Implement data encryption at rest and in transit (GDPR compliance)"
+          },
+          {
+            "id": "T22",
+            "name": "Implement performance optimization for real-time processing (<2s latency)"
+          },
+          {
+            "id": "T23",
+            "name": "Implement data retention and retrieval system (5 years, <10s access)"
+          },
+          {
+            "id": "T24",
+            "name": "Conduct unit testing for all modules and integrations"
+          },
+          {
+            "id": "T25",
+            "name": "Perform integration testing across all system components"
+          },
+          {
+            "id": "T26",
+            "name": "Conduct load testing for 500 concurrent users"
+          },
+          {
+            "id": "T27",
+            "name": "Execute user acceptance testing (UAT) with stakeholders"
+          },
+          {
+            "id": "T28",
+            "name": "Prepare production environment and infrastructure"
+          },
+          {
+            "id": "T29",
+            "name": "Deploy backend services and databases to production"
+          },
+          {
+            "id": "T30",
+            "name": "Deploy web portals and admin interfaces to production"
+          },
+          {
+            "id": "T31",
+            "name": "Publish mobile apps to app stores and configure push notifications"
+          },
+          {
+            "id": "T32",
+            "name": "Conduct final system validation and go-live approval"
+          },
+          {
+            "id": "T33",
+            "name": "Provide user training and documentation"
+          },
+          {
+            "id": "T34",
+            "name": "Monitor system performance and address post-deployment issues"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T6"
+          },
+          {
+            "from": "T2",
+            "to": "T7"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T12"
+          },
+          {
+            "from": "T3",
+            "to": "T13"
+          },
+          {
+            "from": "T3",
+            "to": "T14"
+          },
+          {
+            "from": "T3",
+            "to": "T17"
+          },
+          {
+            "from": "T3",
+            "to": "T21"
+          },
+          {
+            "from": "T3",
+            "to": "T23"
+          },
+          {
+            "from": "T4",
+            "to": "T7"
+          },
+          {
+            "from": "T4",
+            "to": "T8"
+          },
+          {
+            "from": "T4",
+            "to": "T9"
+          },
+          {
+            "from": "T4",
+            "to": "T10"
+          },
+          {
+            "from": "T4",
+            "to": "T15"
+          },
+          {
+            "from": "T4",
+            "to": "T18"
+          },
+          {
+            "from": "T5",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T13"
+          },
+          {
+            "from": "T5",
+            "to": "T14"
+          },
+          {
+            "from": "T5",
+            "to": "T16"
+          },
+          {
+            "from": "T5",
+            "to": "T17"
+          },
+          {
+            "from": "T5",
+            "to": "T20"
+          },
+          {
+            "from": "T6",
+            "to": "T11"
+          },
+          {
+            "from": "T6",
+            "to": "T19"
+          },
+          {
+            "from": "T7",
+            "to": "T8"
+          },
+          {
+            "from": "T7",
+            "to": "T24"
+          },
+          {
+            "from": "T8",
+            "to": "T9"
+          },
+          {
+            "from": "T8",
+            "to": "T10"
+          },
+          {
+            "from": "T8",
+            "to": "T15"
+          },
+          {
+            "from": "T8",
+            "to": "T16"
+          },
+          {
+            "from": "T8",
+            "to": "T18"
+          },
+          {
+            "from": "T8",
+            "to": "T20"
+          },
+          {
+            "from": "T8",
+            "to": "T21"
+          },
+          {
+            "from": "T8",
+            "to": "T22"
+          },
+          {
+            "from": "T8",
+            "to": "T23"
+          },
+          {
+            "from": "T8",
+            "to": "T24"
+          },
+          {
+            "from": "T9",
+            "to": "T11"
+          },
+          {
+            "from": "T9",
+            "to": "T22"
+          },
+          {
+            "from": "T9",
+            "to": "T24"
+          },
+          {
+            "from": "T10",
+            "to": "T20"
+          },
+          {
+            "from": "T10",
+            "to": "T24"
+          },
+          {
+            "from": "T11",
+            "to": "T19"
+          },
+          {
+            "from": "T11",
+            "to": "T24"
+          },
+          {
+            "from": "T12",
+            "to": "T19"
+          },
+          {
+            "from": "T12",
+            "to": "T24"
+          },
+          {
+            "from": "T13",
+            "to": "T17"
+          },
+          {
+            "from": "T13",
+            "to": "T20"
+          },
+          {
+            "from": "T13",
+            "to": "T24"
+          },
+          {
+            "from": "T14",
+            "to": "T20"
+          },
+          {
+            "from": "T14",
+            "to": "T24"
+          },
+          {
+            "from": "T15",
+            "to": "T24"
+          },
+          {
+            "from": "T16",
+            "to": "T19"
+          },
+          {
+            "from": "T16",
+            "to": "T24"
+          },
+          {
+            "from": "T17",
+            "to": "T20"
+          },
+          {
+            "from": "T17",
+            "to": "T24"
+          },
+          {
+            "from": "T18",
+            "to": "T24"
+          },
+          {
+            "from": "T19",
+            "to": "T24"
+          },
+          {
+            "from": "T20",
+            "to": "T24"
+          },
+          {
+            "from": "T21",
+            "to": "T24"
+          },
+          {
+            "from": "T22",
+            "to": "T24"
+          },
+          {
+            "from": "T23",
+            "to": "T24"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          },
+          {
+            "from": "T25",
+            "to": "T26"
+          },
+          {
+            "from": "T26",
+            "to": "T27"
+          },
+          {
+            "from": "T27",
+            "to": "T28"
+          },
+          {
+            "from": "T28",
+            "to": "T29"
+          },
+          {
+            "from": "T29",
+            "to": "T30"
+          },
+          {
+            "from": "T29",
+            "to": "T31"
+          },
+          {
+            "from": "T30",
+            "to": "T31"
+          },
+          {
+            "from": "T31",
+            "to": "T32"
+          },
+          {
+            "from": "T32",
+            "to": "T33"
+          },
+          {
+            "from": "T33",
+            "to": "T34"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Gather detailed requirements and create functional specifications",
+          "risk": "Incomplete or ambiguous requirements may lead to scope creep or misaligned system features.",
+          "severity": "High",
+          "mitigation": "Conduct structured workshops with stakeholders to validate and sign-off on detailed functional specifications before proceeding."
+        },
+        {
+          "stage": "Design system architecture and high-level components",
+          "risk": "Overly complex architecture may hinder scalability or integration with existing school systems.",
+          "severity": "Medium",
+          "mitigation": "Adopt a modular microservices approach with clear boundaries to simplify future integrations and scalability."
+        },
+        {
+          "stage": "Design database schema for attendance records and related entities",
+          "risk": "Poor schema design may result in performance bottlenecks or data integrity issues during high-volume attendance processing.",
+          "severity": "High",
+          "mitigation": "Normalize critical tables but denormalize for read-heavy operations; conduct schema reviews with database experts."
+        },
+        {
+          "stage": "Design API endpoints for attendance marking, reporting, and notifications",
+          "risk": "Inadequate API design may lead to security vulnerabilities or inefficient data transfer between components.",
+          "severity": "High",
+          "mitigation": "Follow RESTful principles with strict input validation and rate limiting; conduct threat modeling for API security."
+        },
+        {
+          "stage": "Design user interfaces for teacher, student, parent, and admin portals",
+          "risk": "Poor UX design may result in low adoption rates among non-technical users like parents and teachers.",
+          "severity": "Medium",
+          "mitigation": "Prototype UI mockups and conduct usability testing with representative end-users before finalizing designs."
+        },
+        {
+          "stage": "Design mobile app architecture and offline sync strategy",
+          "risk": "Offline sync conflicts or data loss may occur due to poor conflict resolution or synchronization logic.",
+          "severity": "High",
+          "mitigation": "Implement conflict-free replicated data types (CRDTs) or operational transformation for offline sync with conflict resolution rules."
+        },
+        {
+          "stage": "Implement biometric fingerprint integration module",
+          "risk": "Biometric data handling may violate privacy laws or fail to meet GDPR compliance requirements.",
+          "severity": "High",
+          "mitigation": "Ensure biometric data is stored locally on devices with user consent and never transmitted or stored centrally."
+        },
+        {
+          "stage": "Implement backend services for attendance recording and processing",
+          "risk": "Race conditions or data corruption may occur during high-concurrency attendance marking events.",
+          "severity": "High",
+          "mitigation": "Use distributed locks or transactional outbox patterns to ensure atomic operations during concurrent updates."
+        },
+        {
+          "stage": "Implement real-time attendance update and notification engine",
+          "risk": "Notification delays or failures may result in missed alerts for critical attendance events.",
+          "severity": "High",
+          "mitigation": "Implement a resilient message queue with retry policies and dead-letter queues for failed notifications."
+        },
+        {
+          "stage": "Implement daily attendance report generation and email dispatch",
+          "risk": "Report generation may time out or fail under high load during end-of-day processing.",
+          "severity": "Medium",
+          "mitigation": "Schedule report generation during off-peak hours and use batch processing with pagination for large datasets."
+        },
+        {
+          "stage": "Implement parent push notification system via school mobile app",
+          "risk": "Push notification delivery may be unreliable due to platform-specific constraints or user opt-outs.",
+          "severity": "Medium",
+          "mitigation": "Implement fallback channels (email/SMS) and monitor push service health with automated alerts."
+        },
+        {
+          "stage": "Implement student attendance history and percentage calculation",
+          "risk": "Incorrect calculation logic may lead to inaccurate attendance percentages and compliance violations.",
+          "severity": "High",
+          "mitigation": "Validate calculation logic against regulatory requirements and conduct peer reviews with domain experts."
+        },
+        {
+          "stage": "Implement attendance policy configuration and enforcement module",
+          "risk": "Policy misconfiguration may lead to incorrect enforcement or legal disputes with parents.",
+          "severity": "High",
+          "mitigation": "Implement a policy simulation tool to validate enforcement logic before deployment."
+        },
+        {
+          "stage": "Implement attendance override request and approval workflow",
+          "risk": "Manual approval processes may cause delays or inconsistent handling of override requests.",
+          "severity": "Medium",
+          "mitigation": "Automate approval workflows based on configurable rules while allowing manual override for exceptional cases."
+        },
+        {
+          "stage": "Integrate with school timetable module for auto-population",
+          "risk": "Timetable data inconsistencies may lead to incorrect attendance marking or reporting.",
+          "severity": "High",
+          "mitigation": "Implement data validation and reconciliation processes between attendance and timetable systems."
+        },
+        {
+          "stage": "Implement parent leave application and approval workflow",
+          "risk": "Leave requests may be mishandled due to poor workflow design or lack of notifications.",
+          "severity": "Medium",
+          "mitigation": "Implement a transparent approval workflow with status tracking and automated notifications."
+        },
+        {
+          "stage": "Implement attendance threshold monitoring and dashboard alerts",
+          "risk": "False alerts or missed critical thresholds may erode trust in the monitoring system.",
+          "severity": "High",
+          "mitigation": "Calibrate alert thresholds using historical data and implement multi-level escalation policies."
+        },
+        {
+          "stage": "Implement photo capture and secure storage for attendance verification",
+          "risk": "Unauthorized access to stored photos may violate student privacy or GDPR requirements.",
+          "severity": "High",
+          "mitigation": "Encrypt photos at rest with access controls and implement strict retention policies with automatic deletion."
+        },
+        {
+          "stage": "Develop mobile app frontend for parents and students with offline support",
+          "risk": "Offline data corruption or sync errors may lead to inconsistent attendance records.",
+          "severity": "High",
+          "mitigation": "Implement robust data validation and conflict resolution during sync with server-side conflict logging."
+        },
+        {
+          "stage": "Develop web portal frontend for teachers, students, and administrators",
+          "risk": "Cross-site scripting (XSS) or injection attacks may compromise user data in web portals.",
+          "severity": "High",
+          "mitigation": "Conduct security code reviews and implement CSP headers, input sanitization, and output encoding."
+        },
+        {
+          "stage": "Implement data encryption at rest and in transit (GDPR compliance)",
+          "risk": "Improper key management or encryption implementation may lead to data breaches or compliance failures.",
+          "severity": "High",
+          "mitigation": "Use industry-standard encryption libraries (e.g., AES-256) and manage keys with a dedicated HSM or cloud KMS."
+        },
+        {
+          "stage": "Implement performance optimization for real-time processing (<2s latency)",
+          "risk": "Performance bottlenecks may cause unacceptable delays during peak usage times.",
+          "severity": "High",
+          "mitigation": "Conduct load testing with realistic scenarios and optimize database queries, caching, and API responses."
+        },
+        {
+          "stage": "Implement data retention and retrieval system (5 years, <10s access)",
+          "risk": "Archived data may become inaccessible or corrupted over time, violating retention policies.",
+          "severity": "Medium",
+          "mitigation": "Use tiered storage (hot/warm/cold) with automated lifecycle policies and regular data integrity checks."
+        },
+        {
+          "stage": "Conduct unit testing for all modules and integrations",
+          "risk": "Insufficient test coverage may allow bugs to reach production, especially in complex workflows.",
+          "severity": "Medium",
+          "mitigation": "Implement TDD practices and require >90% code coverage with integration test suites for critical paths."
+        },
+        {
+          "stage": "Perform integration testing across all system components",
+          "risk": "Integration failures may go undetected until production, causing system-wide outages.",
+          "severity": "High",
+          "mitigation": "Use contract testing and service virtualization to simulate dependencies during integration testing."
+        },
+        {
+          "stage": "Conduct load testing for 500 concurrent users",
+          "risk": "System may fail under load due to unoptimized queries, memory leaks, or insufficient infrastructure.",
+          "severity": "High",
+          "mitigation": "Scale infrastructure horizontally and use profiling tools to identify and resolve bottlenecks."
+        },
+        {
+          "stage": "Execute user acceptance testing (UAT) with stakeholders",
+          "risk": "Stakeholders may reject the system due to misaligned expectations or usability issues.",
+          "severity": "High",
+          "mitigation": "Involve end-users early in the design process and conduct iterative UAT with clear acceptance criteria."
+        },
+        {
+          "stage": "Prepare production environment and infrastructure",
+          "risk": "Configuration drift or missing dependencies may cause deployment failures or security vulnerabilities.",
+          "severity": "Medium",
+          "mitigation": "Use infrastructure-as-code (IaC) and immutable infrastructure patterns with automated compliance checks."
+        },
+        {
+          "stage": "Deploy backend services and databases to production",
+          "risk": "Data loss or corruption may occur during deployment due to improper backup or rollback procedures.",
+          "severity": "High",
+          "mitigation": "Implement blue-green deployments with automated backups and rollback capabilities."
+        },
+        {
+          "stage": "Deploy web portals and admin interfaces to production",
+          "risk": "Frontend deployment issues may cause downtime or broken user experiences.",
+          "severity": "Medium",
+          "mitigation": "Use CDN caching and feature flags to enable gradual rollouts and quick rollbacks."
+        },
+        {
+          "stage": "Publish mobile apps to app stores and configure push notifications",
+          "risk": "App store rejection or push notification service failures may delay go-live.",
+          "severity": "Medium",
+          "mitigation": "Follow app store guidelines closely and test push notification services with sandbox environments."
+        },
+        {
+          "stage": "Conduct final system validation and go-live approval",
+          "risk": "Critical issues may be discovered too late, leading to reputational damage or legal consequences.",
+          "severity": "High",
+          "mitigation": "Implement a phased go-live approach with a pilot group and strict rollback criteria."
+        },
+        {
+          "stage": "Provide user training and documentation",
+          "risk": "Inadequate training may lead to low user adoption or misuse of system features.",
+          "severity": "Medium",
+          "mitigation": "Develop role-specific training materials and conduct hands-on workshops with follow-up support."
+        },
+        {
+          "stage": "Monitor system performance and address post-deployment issues",
+          "risk": "Undetected performance degradation or security incidents may escalate into major incidents.",
+          "severity": "High",
+          "mitigation": "Implement real-time monitoring with automated alerts and a dedicated incident response team."
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.714,
+        "risk_coverage": 1.0,
+        "validation_score": 94.29
+      },
+      "response_time_seconds": 33.002
+    }
+  },
+  "scores": {
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 97.10320586631114,
+      "overall_score": 66.46
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 90.45209381249622,
+      "overall_score": 65.8
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 71.39999999999999,
+      "workflow_correctness": 100.0,
+      "risk_quality": 100.0,
+      "response_time": 0.0,
+      "overall_score": 84.28
+    }
+  },
+  "best_model": "mistral"
+}

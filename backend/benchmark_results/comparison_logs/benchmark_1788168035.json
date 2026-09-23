@@ -1,0 +1,650 @@
+{
+  "timestamp": 1788168035,
+  "project_description": "food delivery app",
+  "results": {
+    "llama": {
+      "model_key": "llama",
+      "success": false,
+      "error": "[Errno 13] Permission denied: 'outputs\\\\architecture_diagrams\\\\workflow_architecture'",
+      "response_time_seconds": 0.342
+    },
+    "qwen": {
+      "model_key": "qwen",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "Food logging must be available offline and sync when online",
+        "Food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 0.454
+    },
+    "gemini": {
+      "model_key": "gemini",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "Food logging must be available offline and sync when online",
+        "Food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 1.421
+    },
+    "deepseek": {
+      "model_key": "deepseek",
+      "success": true,
+      "requirements": [
+        "Users can log food entries",
+        "Users can view their food history",
+        "Users can edit previously logged food entries",
+        "Users can delete food entries they created",
+        "Users can search food entries by tag or date",
+        "Users can export their food data as CSV",
+        "Users can share food entries with a caregiver",
+        "The system can aggregate food statistics per week",
+        "All food data must be encrypted at rest",
+        "Food logging must be available offline and sync when online",
+        "Food data should be exportable within 5 seconds",
+        "The UI for food pages must be accessible (WCAG AA)",
+        "The system must retain food history for 2 years"
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Define project scope"
+          }
+        ],
+        "edges": []
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [
+          "T1"
+        ],
+        "workflow_completeness": 0.0,
+        "risk_coverage": 0.0,
+        "validation_score": 55.0
+      },
+      "response_time_seconds": 2.48
+    },
+    "mistral": {
+      "model_key": "mistral",
+      "success": true,
+      "requirements": [
+        "Customers can browse restaurant menus categorized by cuisine type, dietary restrictions, and average delivery time, with real-time updates on dish availability.",
+        "Customers can place orders by selecting items, customizing toppings, and specifying delivery instructions, with an estimated delivery time calculated based on restaurant capacity and current order queue.",
+        "Customers can track their order in real-time via a live map showing the delivery agent's location, estimated arrival time, and a step-by-step status timeline (e.g., 'Order confirmed', 'Preparing', 'Out for delivery').",
+        "Delivery agents can accept or reject incoming delivery requests based on their current location, vehicle type, and proximity to the restaurant, with the system prioritizing nearby agents for faster pickup.",
+        "Delivery agents can scan a QR code at the restaurant to confirm order pickup, triggering an automatic update to the customer's order status and updating the live map with the agent's location.",
+        "Restaurants can set dynamic menu prices based on peak hours, ingredient availability, and demand, with the system automatically adjusting prices and notifying customers of changes before checkout.",
+        "Restaurants can receive instant notifications when an order is placed, including customer details, special requests, and a countdown timer for order preparation to ensure timely delivery.",
+        "Customers can rate and tip delivery agents after order completion, with the system storing historical performance metrics (e.g., on-time delivery rate, customer ratings) for agents to build their reputation profile.",
+        "The system must process and display live order status updates within 3 seconds to ensure customers and delivery agents have real-time visibility during peak hours.",
+        "The live map tracking delivery agents must update their location every 10 seconds to maintain accuracy within 50 meters, accounting for urban GPS signal fluctuations.",
+        "The system must handle a minimum of 10,000 concurrent order placements during peak dinner hours (6 PM - 9 PM) without latency exceeding 2 seconds for order confirmation.",
+        "The restaurant menu must load within 1.5 seconds on mobile devices with a 3G connection, ensuring quick browsing even in low-bandwidth areas.",
+        "The system must store and retrieve customer order history for at least 1 year with 99.9% uptime, allowing customers to reorder past meals with one tap."
+      ],
+      "workflow_json": {
+        "nodes": [
+          {
+            "id": "T1",
+            "name": "Gather and document detailed system requirements"
+          },
+          {
+            "id": "T2",
+            "name": "Define system architecture and high-level design"
+          },
+          {
+            "id": "T3",
+            "name": "Design database schema for orders, users, restaurants, and delivery agents"
+          },
+          {
+            "id": "T4",
+            "name": "Design API specifications for frontend-backend communication"
+          },
+          {
+            "id": "T5",
+            "name": "Design real-time tracking and notification system architecture"
+          },
+          {
+            "id": "T6",
+            "name": "Design UI/UX for customer, restaurant, and delivery agent interfaces"
+          },
+          {
+            "id": "T7",
+            "name": "Set up development environment and CI/CD pipeline"
+          },
+          {
+            "id": "T8",
+            "name": "Implement backend services for user authentication and authorization"
+          },
+          {
+            "id": "T9",
+            "name": "Implement restaurant and menu management system"
+          },
+          {
+            "id": "T10",
+            "name": "Implement order placement and customization logic"
+          },
+          {
+            "id": "T11",
+            "name": "Implement dynamic pricing engine for restaurants"
+          },
+          {
+            "id": "T12",
+            "name": "Implement real-time order status and live map tracking system"
+          },
+          {
+            "id": "T13",
+            "name": "Implement delivery agent assignment and proximity-based routing"
+          },
+          {
+            "id": "T14",
+            "name": "Implement QR code pickup confirmation system"
+          },
+          {
+            "id": "T15",
+            "name": "Implement customer rating and tipping system"
+          },
+          {
+            "id": "T16",
+            "name": "Implement notification system for restaurants and customers"
+          },
+          {
+            "id": "T17",
+            "name": "Develop customer mobile app frontend"
+          },
+          {
+            "id": "T18",
+            "name": "Develop restaurant management web interface"
+          },
+          {
+            "id": "T19",
+            "name": "Develop delivery agent mobile app frontend"
+          },
+          {
+            "id": "T20",
+            "name": "Unit test backend services and APIs"
+          },
+          {
+            "id": "T21",
+            "name": "Integration test order flow across customer, restaurant, and delivery agent systems"
+          },
+          {
+            "id": "T22",
+            "name": "Load and performance test system for 10,000 concurrent orders"
+          },
+          {
+            "id": "T23",
+            "name": "Security and penetration testing"
+          },
+          {
+            "id": "T24",
+            "name": "User acceptance testing (UAT) with pilot customers and restaurants"
+          },
+          {
+            "id": "T25",
+            "name": "Optimize frontend performance for 3G and low-bandwidth scenarios"
+          },
+          {
+            "id": "T26",
+            "name": "Deploy staging environment and conduct final validation"
+          },
+          {
+            "id": "T27",
+            "name": "Deploy production system with phased rollout (e.g., by region)"
+          },
+          {
+            "id": "T28",
+            "name": "Monitor and optimize real-time tracking accuracy and latency"
+          },
+          {
+            "id": "T29",
+            "name": "Document system architecture, APIs, and user guides"
+          },
+          {
+            "id": "T30",
+            "name": "Plan and execute post-launch support and maintenance procedures"
+          }
+        ],
+        "edges": [
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T2",
+            "to": "T4"
+          },
+          {
+            "from": "T2",
+            "to": "T5"
+          },
+          {
+            "from": "T2",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T8"
+          },
+          {
+            "from": "T3",
+            "to": "T9"
+          },
+          {
+            "from": "T3",
+            "to": "T10"
+          },
+          {
+            "from": "T3",
+            "to": "T11"
+          },
+          {
+            "from": "T3",
+            "to": "T13"
+          },
+          {
+            "from": "T3",
+            "to": "T15"
+          },
+          {
+            "from": "T4",
+            "to": "T8"
+          },
+          {
+            "from": "T4",
+            "to": "T10"
+          },
+          {
+            "from": "T4",
+            "to": "T16"
+          },
+          {
+            "from": "T5",
+            "to": "T12"
+          },
+          {
+            "from": "T5",
+            "to": "T13"
+          },
+          {
+            "from": "T5",
+            "to": "T14"
+          },
+          {
+            "from": "T6",
+            "to": "T17"
+          },
+          {
+            "from": "T6",
+            "to": "T18"
+          },
+          {
+            "from": "T6",
+            "to": "T19"
+          },
+          {
+            "from": "T7",
+            "to": "T8"
+          },
+          {
+            "from": "T8",
+            "to": "T9"
+          },
+          {
+            "from": "T8",
+            "to": "T10"
+          },
+          {
+            "from": "T8",
+            "to": "T12"
+          },
+          {
+            "from": "T8",
+            "to": "T16"
+          },
+          {
+            "from": "T8",
+            "to": "T17"
+          },
+          {
+            "from": "T8",
+            "to": "T18"
+          },
+          {
+            "from": "T8",
+            "to": "T19"
+          },
+          {
+            "from": "T8",
+            "to": "T20"
+          },
+          {
+            "from": "T9",
+            "to": "T11"
+          },
+          {
+            "from": "T9",
+            "to": "T17"
+          },
+          {
+            "from": "T9",
+            "to": "T18"
+          },
+          {
+            "from": "T9",
+            "to": "T20"
+          },
+          {
+            "from": "T10",
+            "to": "T12"
+          },
+          {
+            "from": "T10",
+            "to": "T15"
+          },
+          {
+            "from": "T10",
+            "to": "T16"
+          },
+          {
+            "from": "T10",
+            "to": "T17"
+          },
+          {
+            "from": "T10",
+            "to": "T20"
+          },
+          {
+            "from": "T11",
+            "to": "T18"
+          },
+          {
+            "from": "T11",
+            "to": "T20"
+          },
+          {
+            "from": "T12",
+            "to": "T13"
+          },
+          {
+            "from": "T12",
+            "to": "T14"
+          },
+          {
+            "from": "T12",
+            "to": "T20"
+          },
+          {
+            "from": "T13",
+            "to": "T14"
+          },
+          {
+            "from": "T13",
+            "to": "T19"
+          },
+          {
+            "from": "T13",
+            "to": "T20"
+          },
+          {
+            "from": "T14",
+            "to": "T19"
+          },
+          {
+            "from": "T14",
+            "to": "T20"
+          },
+          {
+            "from": "T15",
+            "to": "T20"
+          },
+          {
+            "from": "T16",
+            "to": "T20"
+          },
+          {
+            "from": "T17",
+            "to": "T21"
+          },
+          {
+            "from": "T17",
+            "to": "T25"
+          },
+          {
+            "from": "T18",
+            "to": "T21"
+          },
+          {
+            "from": "T18",
+            "to": "T25"
+          },
+          {
+            "from": "T19",
+            "to": "T21"
+          },
+          {
+            "from": "T19",
+            "to": "T25"
+          },
+          {
+            "from": "T20",
+            "to": "T21"
+          },
+          {
+            "from": "T20",
+            "to": "T22"
+          },
+          {
+            "from": "T20",
+            "to": "T23"
+          },
+          {
+            "from": "T21",
+            "to": "T22"
+          },
+          {
+            "from": "T21",
+            "to": "T23"
+          },
+          {
+            "from": "T21",
+            "to": "T24"
+          },
+          {
+            "from": "T22",
+            "to": "T24"
+          },
+          {
+            "from": "T23",
+            "to": "T24"
+          },
+          {
+            "from": "T24",
+            "to": "T25"
+          },
+          {
+            "from": "T24",
+            "to": "T26"
+          },
+          {
+            "from": "T25",
+            "to": "T26"
+          },
+          {
+            "from": "T26",
+            "to": "T27"
+          },
+          {
+            "from": "T27",
+            "to": "T28"
+          },
+          {
+            "from": "T27",
+            "to": "T29"
+          },
+          {
+            "from": "T27",
+            "to": "T30"
+          }
+        ]
+      },
+      "diagram_path": "outputs\\architecture_diagrams\\workflow_architecture.png",
+      "risk_report": [
+        {
+          "stage": "Unknown",
+          "risk": "Unable to parse risk analysis output",
+          "severity": "Medium",
+          "mitigation": "Re-run risk analysis with a clearer workflow description"
+        }
+      ],
+      "validation_report": {
+        "duplicate_tasks": [],
+        "dependency_issues": {
+          "has_cycle": false,
+          "dangling_edges": []
+        },
+        "isolated_nodes": [],
+        "workflow_completeness": 0.857,
+        "risk_coverage": 0.0,
+        "validation_score": 77.14
+      },
+      "response_time_seconds": 32.941
+    }
+  },
+  "scores": {
+    "qwen": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 98.62177833095535,
+      "overall_score": 66.61
+    },
+    "gemini": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 95.6862268905012,
+      "overall_score": 66.32
+    },
+    "deepseek": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 0.0,
+      "workflow_correctness": 95.0,
+      "risk_quality": 40.0,
+      "response_time": 92.47138823957985,
+      "overall_score": 66.0
+    },
+    "mistral": {
+      "requirement_coverage": 100.0,
+      "workflow_completeness": 85.7,
+      "workflow_correctness": 100.0,
+      "risk_quality": 40.0,
+      "response_time": 0.0,
+      "overall_score": 75.14
+    }
+  },
+  "best_model": "mistral"
+}
